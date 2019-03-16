@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2017.11.27.16:57:13"
+ outputDirectory="E:/STUDY/quartus_examples/diagonal/synth/working/diagonal/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Arria 10"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="10AX115S2F45I2SG"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="2"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="a" kind="conduit" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="areset" />
+   <port name="a" direction="input" role="a" width="32" />
+  </interface>
+  <interface name="areset" kind="reset" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="areset" direction="input" role="reset" width="1" />
+  </interface>
+  <interface name="b" kind="conduit" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="areset" />
+   <port name="b" direction="input" role="b" width="32" />
+  </interface>
+  <interface name="clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="q" kind="conduit" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="" />
+   <port name="q" direction="output" role="q" width="32" />
+  </interface>
+ </perimeter>
+ <entity kind="diagonal" version="1.0" name="diagonal">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="1511773030" />
+  <parameter name="AUTO_DEVICE" value="10AX115S2F45I2SG" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria 10" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <generatedFiles>
+   <file
+       path="E:\STUDY\quartus_examples\diagonal\synth\working\diagonal\synth\diagonal.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+   <file
+       path="E:\STUDY\quartus_examples\diagonal\synth\working\diagonal\synth\diagonal_cfg.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="E:\STUDY\quartus_examples\diagonal\synth\working\diagonal\synth\diagonal.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+   <file
+       path="E:\STUDY\quartus_examples\diagonal\synth\working\diagonal\synth\diagonal_cfg.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file path="E:/STUDY/quartus_examples/diagonal/synth/working/diagonal.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="C:/intelfpga/16.1/ip/altera/dsp/altera_fp_functions/source/altera_fp_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="diagonal">"Generating: diagonal"</message>
+   <message level="Info" culprit="diagonal">"Generating: diagonal_altera_fp_functions_161_4gfcm3q"</message>
+   <message level="Info" culprit="fp_functions_0">C:/intelfpga/16.1/quartus/dspba/backend/windows64/cmdPolyEval -target Arria10 -frequency 400 -name none -noChanValid -enableHardFP 1 -printMachineReadable -noFileGenerate -correctRounding -speedgrade 2 FPSub 8 23</message>
+   <message level="Info" culprit="fp_functions_0">C:/intelfpga/16.1/quartus/dspba/backend/windows64/cmdPolyEval -target Arria10 -frequency 600 -name none -noChanValid -enableHardFP 1 -printMachineReadable -noFileGenerate -correctRounding -speedgrade 2 FPSub 8 23</message>
+   <message level="Info" culprit="fp_functions_0">C:/intelfpga/16.1/quartus/dspba/backend/windows64/cmdPolyEval -target Arria10 -frequency 700 -name none -noChanValid -enableHardFP 1 -printMachineReadable -noFileGenerate -correctRounding -speedgrade 2 FPSub 8 23</message>
+   <message level="Info" culprit="fp_functions_0">C:/intelfpga/16.1/quartus/dspba/backend/windows64/cmdPolyEval -target Arria10 -frequency 750 -name none -noChanValid -enableHardFP 1 -printMachineReadable -noFileGenerate -correctRounding -speedgrade 2 FPSub 8 23</message>
+   <message level="Info" culprit="fp_functions_0">C:/intelfpga/16.1/quartus/dspba/backend/windows64/cmdPolyEval -target Arria10 -frequency 775 -name none -noChanValid -enableHardFP 1 -printMachineReadable -noFileGenerate -correctRounding -speedgrade 2 FPSub 8 23</message>
+   <message level="Info" culprit="fp_functions_0">C:/intelfpga/16.1/quartus/dspba/backend/windows64/cmdPolyEval -target Arria10 -frequency 788 -name none -noChanValid -enableHardFP 1 -printMachineReadable -noFileGenerate -correctRounding -speedgrade 2 FPSub 8 23</message>
+   <message level="Info" culprit="fp_functions_0">C:/intelfpga/16.1/quartus/dspba/backend/windows64/cmdPolyEval -target Arria10 -frequency 795 -name none -noChanValid -enableHardFP 1 -printMachineReadable -noFileGenerate -correctRounding -speedgrade 2 FPSub 8 23</message>
+   <message level="Info" culprit="fp_functions_0">C:/intelfpga/16.1/quartus/dspba/backend/windows64/cmdPolyEval -target Arria10 -frequency 799 -name none -noChanValid -enableHardFP 1 -printMachineReadable -noFileGenerate -correctRounding -speedgrade 2 FPSub 8 23</message>
+   <message level="Info" culprit="fp_functions_0">C:/intelfpga/16.1/quartus/dspba/backend/windows64/cmdPolyEval -target Arria10 -frequency 801 -name none -noChanValid -enableHardFP 1 -printMachineReadable -noFileGenerate -correctRounding -speedgrade 2 FPSub 8 23</message>
+   <message level="Info" culprit="fp_functions_0">C:/intelfpga/16.1/quartus/dspba/backend/windows64/cmdPolyEval -target Arria10 -frequency 802 -name none -noChanValid -enableHardFP 1 -printMachineReadable -noFileGenerate -correctRounding -speedgrade 2 FPSub 8 23</message>
+   <message level="Info" culprit="fp_functions_0">C:/intelfpga/16.1/quartus/dspba/backend/windows64/cmdPolyEval -target Arria10 -frequency 803 -name none -noChanValid -enableHardFP 1 -printMachineReadable -noFileGenerate -correctRounding -speedgrade 2 FPSub 8 23</message>
+   <message level="Info" culprit="fp_functions_0">C:/intelfpga/16.1/quartus/dspba/backend/windows64/cmdPolyEval -target Arria10 -frequency 804 -name none -noChanValid -enableHardFP 1 -printMachineReadable -noFileGenerate -correctRounding -speedgrade 2 FPSub 8 23</message>
+   <message level="Info" culprit="fp_functions_0">Could achieve 3 cycles latency maximum at Frequency 805 MHz, padding with registers to reach requested 3 cycles latency</message>
+   <message level="Info" culprit="fp_functions_0">C:/intelfpga/16.1/quartus/dspba/backend/windows64/cmdPolyEval -target Arria10 -frequency 804 -name diagonal_altera_fp_functions_161_4gfcm3q -noChanValid -enableHardFP 1 -printMachineReadable -lang VHDL -constrainLatency 3 -correctRounding -speedgrade 2 FPSub 8 23</message>
+   <message level="Info" culprit="fp_functions_0">DSP Blocks Used: 2</message>
+   <message level="Info" culprit="fp_functions_0">LUTs Used: 0</message>
+   <message level="Info" culprit="fp_functions_0">Memory Bits Used: 0</message>
+   <message level="Info" culprit="fp_functions_0">Memory Blocks Used: 0</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_fp_functions"
+   version="16.1"
+   name="diagonal_altera_fp_functions_161_4gfcm3q">
+  <parameter name="fp_man" value="23" />
+  <parameter name="gen_enable" value="false" />
+  <parameter name="fp_exp_derived" value="8" />
+  <parameter name="use_rounding_mode" value="true" />
+  <parameter name="fp_in_exp" value="8" />
+  <parameter name="validation_failed" value="false" />
+  <parameter name="fxpt_width" value="32" />
+  <parameter name="manual_dsp_planning" value="true" />
+  <parameter name="force_elaborate" value="0" />
+  <parameter name="EXP_LOG_function" value="EXPE" />
+  <parameter name="fp_format" value="single" />
+  <parameter name="fp_out_man_derived" value="8" />
+  <parameter name="latency_target" value="3" />
+  <parameter name="frequency_target" value="300" />
+  <parameter name="number_of_inputs" value="2" />
+  <parameter name="fp_in_format" value="single" />
+  <parameter name="select_signal_enable" value="false" />
+  <parameter name="derivedfunction" value="SUB" />
+  <parameter name="scale_by_pi" value="false" />
+  <parameter name="TRIG_function" value="SIN" />
+  <parameter name="performance_goal" value="latency" />
+  <parameter name="frequency_feedback" value="0" />
+  <parameter name="fp_out_man" value="23" />
+  <parameter
+     name="rounding_mode_derived"
+     value="nearest with tie breaking to even" />
+  <parameter name="fp_in_man_derived" value="8" />
+  <parameter name="faithful_rounding" value="false" />
+  <parameter name="rounding_mode" value="nearest with tie breaking away from zero" />
+  <parameter name="fp_man_derived" value="23" />
+  <parameter name="fp_in_man" value="23" />
+  <parameter name="selected_device_family" value="Arria 10" />
+  <parameter name="fp_exp" value="8" />
+  <parameter name="fp_out_exp_derived" value="8" />
+  <parameter name="ALL_function" value="ADD" />
+  <parameter name="trig_no_range_reduction" value="false" />
+  <parameter name="divide_type" value="0" />
+  <parameter name="forceRegisters" value="1111" />
+  <parameter name="enable_hard_fp" value="true" />
+  <parameter name="ARITH_function" value="SUB" />
+  <parameter name="fp_out_format" value="single" />
+  <parameter name="fxpt_fraction" value="0" />
+  <parameter name="fxpt_sign" value="1" />
+  <parameter name="selected_device_speedgrade" value="2" />
+  <parameter name="CONVERT_function" value="FXP_FP" />
+  <parameter name="report_resources_to_xml" value="false" />
+  <parameter name="latency_feedback" value="0" />
+  <parameter name="fp_in_exp_derived" value="8" />
+  <parameter name="COMPARE_function" value="MIN" />
+  <parameter name="FUNCTION_FAMILY" value="ARITH" />
+  <parameter name="fp_out_exp" value="8" />
+  <parameter name="ROOTS_function" value="SQRT" />
+  <parameter name="exponent_width" value="23" />
+  <generatedFiles>
+   <file
+       path="E:\STUDY\quartus_examples\diagonal\synth\working\diagonal\altera_fp_functions_161\synth\dspba_library_package.vhd"
+       attributes="" />
+   <file
+       path="E:\STUDY\quartus_examples\diagonal\synth\working\diagonal\altera_fp_functions_161\synth\dspba_library.vhd"
+       attributes="" />
+   <file
+       path="E:\STUDY\quartus_examples\diagonal\synth\working\diagonal\altera_fp_functions_161\synth\diagonal_altera_fp_functions_161_4gfcm3q.vhd"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="E:\STUDY\quartus_examples\diagonal\synth\working\diagonal\altera_fp_functions_161\synth\dspba_library_package.vhd"
+       attributes="" />
+   <file
+       path="E:\STUDY\quartus_examples\diagonal\synth\working\diagonal\altera_fp_functions_161\synth\dspba_library.vhd"
+       attributes="" />
+   <file
+       path="E:\STUDY\quartus_examples\diagonal\synth\working\diagonal\altera_fp_functions_161\synth\diagonal_altera_fp_functions_161_4gfcm3q.vhd"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/intelfpga/16.1/ip/altera/dsp/altera_fp_functions/source/altera_fp_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="diagonal" as="fp_functions_0" />
+  <messages>
+   <message level="Info" culprit="diagonal">"Generating: diagonal_altera_fp_functions_161_4gfcm3q"</message>
+   <message level="Info" culprit="fp_functions_0">C:/intelfpga/16.1/quartus/dspba/backend/windows64/cmdPolyEval -target Arria10 -frequency 400 -name none -noChanValid -enableHardFP 1 -printMachineReadable -noFileGenerate -correctRounding -speedgrade 2 FPSub 8 23</message>
+   <message level="Info" culprit="fp_functions_0">C:/intelfpga/16.1/quartus/dspba/backend/windows64/cmdPolyEval -target Arria10 -frequency 600 -name none -noChanValid -enableHardFP 1 -printMachineReadable -noFileGenerate -correctRounding -speedgrade 2 FPSub 8 23</message>
+   <message level="Info" culprit="fp_functions_0">C:/intelfpga/16.1/quartus/dspba/backend/windows64/cmdPolyEval -target Arria10 -frequency 700 -name none -noChanValid -enableHardFP 1 -printMachineReadable -noFileGenerate -correctRounding -speedgrade 2 FPSub 8 23</message>
+   <message level="Info" culprit="fp_functions_0">C:/intelfpga/16.1/quartus/dspba/backend/windows64/cmdPolyEval -target Arria10 -frequency 750 -name none -noChanValid -enableHardFP 1 -printMachineReadable -noFileGenerate -correctRounding -speedgrade 2 FPSub 8 23</message>
+   <message level="Info" culprit="fp_functions_0">C:/intelfpga/16.1/quartus/dspba/backend/windows64/cmdPolyEval -target Arria10 -frequency 775 -name none -noChanValid -enableHardFP 1 -printMachineReadable -noFileGenerate -correctRounding -speedgrade 2 FPSub 8 23</message>
+   <message level="Info" culprit="fp_functions_0">C:/intelfpga/16.1/quartus/dspba/backend/windows64/cmdPolyEval -target Arria10 -frequency 788 -name none -noChanValid -enableHardFP 1 -printMachineReadable -noFileGenerate -correctRounding -speedgrade 2 FPSub 8 23</message>
+   <message level="Info" culprit="fp_functions_0">C:/intelfpga/16.1/quartus/dspba/backend/windows64/cmdPolyEval -target Arria10 -frequency 795 -name none -noChanValid -enableHardFP 1 -printMachineReadable -noFileGenerate -correctRounding -speedgrade 2 FPSub 8 23</message>
+   <message level="Info" culprit="fp_functions_0">C:/intelfpga/16.1/quartus/dspba/backend/windows64/cmdPolyEval -target Arria10 -frequency 799 -name none -noChanValid -enableHardFP 1 -printMachineReadable -noFileGenerate -correctRounding -speedgrade 2 FPSub 8 23</message>
+   <message level="Info" culprit="fp_functions_0">C:/intelfpga/16.1/quartus/dspba/backend/windows64/cmdPolyEval -target Arria10 -frequency 801 -name none -noChanValid -enableHardFP 1 -printMachineReadable -noFileGenerate -correctRounding -speedgrade 2 FPSub 8 23</message>
+   <message level="Info" culprit="fp_functions_0">C:/intelfpga/16.1/quartus/dspba/backend/windows64/cmdPolyEval -target Arria10 -frequency 802 -name none -noChanValid -enableHardFP 1 -printMachineReadable -noFileGenerate -correctRounding -speedgrade 2 FPSub 8 23</message>
+   <message level="Info" culprit="fp_functions_0">C:/intelfpga/16.1/quartus/dspba/backend/windows64/cmdPolyEval -target Arria10 -frequency 803 -name none -noChanValid -enableHardFP 1 -printMachineReadable -noFileGenerate -correctRounding -speedgrade 2 FPSub 8 23</message>
+   <message level="Info" culprit="fp_functions_0">C:/intelfpga/16.1/quartus/dspba/backend/windows64/cmdPolyEval -target Arria10 -frequency 804 -name none -noChanValid -enableHardFP 1 -printMachineReadable -noFileGenerate -correctRounding -speedgrade 2 FPSub 8 23</message>
+   <message level="Info" culprit="fp_functions_0">Could achieve 3 cycles latency maximum at Frequency 805 MHz, padding with registers to reach requested 3 cycles latency</message>
+   <message level="Info" culprit="fp_functions_0">C:/intelfpga/16.1/quartus/dspba/backend/windows64/cmdPolyEval -target Arria10 -frequency 804 -name diagonal_altera_fp_functions_161_4gfcm3q -noChanValid -enableHardFP 1 -printMachineReadable -lang VHDL -constrainLatency 3 -correctRounding -speedgrade 2 FPSub 8 23</message>
+   <message level="Info" culprit="fp_functions_0">DSP Blocks Used: 2</message>
+   <message level="Info" culprit="fp_functions_0">LUTs Used: 0</message>
+   <message level="Info" culprit="fp_functions_0">Memory Bits Used: 0</message>
+   <message level="Info" culprit="fp_functions_0">Memory Blocks Used: 0</message>
+  </messages>
+ </entity>
+</deploy>

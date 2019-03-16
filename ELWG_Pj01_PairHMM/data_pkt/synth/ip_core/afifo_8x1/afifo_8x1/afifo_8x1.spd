@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="fifo_161/sim/afifo_8x1_fifo_161_rgwi5iq.v"
+   type="VERILOG"
+   library="afifo_8x1_fifo_161" />
+ <file
+   path="fifo_161/sim/afifo_8x1_fifo_161_rgwi5iq.sdc"
+   type="SDC"
+   library="afifo_8x1_fifo_161" />
+ <file path="sim/afifo_8x1.v" type="VERILOG" hasInlineConfiguration="true" />
+ <topLevel name="afifo_8x1" />
+ <deviceFamily name="arria10" />
+</simPackage>

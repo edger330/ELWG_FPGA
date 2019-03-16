@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="ram_2port_161/sim/ram_9600x128_ram_2port_161_hoafeji.v"
+   type="VERILOG"
+   library="ram_9600x128_ram_2port_161" />
+ <file
+   path="sim/ram_9600x128.v"
+   type="VERILOG"
+   hasInlineConfiguration="true" />
+ <topLevel name="ram_9600x128" />
+ <deviceFamily name="arria10" />
+</simPackage>

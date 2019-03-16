@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="ram_2port_161/sim/ram_2port_512x32_ram_2port_161_wdhffea.v"
+   type="VERILOG"
+   library="ram_2port_512x32_ram_2port_161" />
+ <file
+   path="sim/ram_2port_512x32.v"
+   type="VERILOG"
+   hasInlineConfiguration="true" />
+ <topLevel name="ram_2port_512x32" />
+ <deviceFamily name="arria10" />
+</simPackage>

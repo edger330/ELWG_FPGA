@@ -1,0 +1,43 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/diagonal/fifo_512x128_d/fifo_512x128_d.qsys --block-symbol-file --output-directory=/home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/diagonal/fifo_512x128_d/fifo_512x128_d --family="Arria 10" --part=10AX115S2F45I1SG
+Progress: Loading fifo_512x128_d/fifo_512x128_d.qsys
+Progress: Reading input file
+Progress: Adding fifo_0 [fifo 16.1]
+Progress: Parameterizing module fifo_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+: fifo_512x128_d.fifo_0: Targeting device family: Arria 10.
+: fifo_512x128_d.fifo_0: Tab: 'DCFIFO 1' is unavailable while using Single-Clock FIFO.
+: fifo_512x128_d.fifo_0: Tab: 'DCFIFO 2' is unavailable while using Single-Clock FIFO.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/diagonal/fifo_512x128_d/fifo_512x128_d.qsys --synthesis=VERILOG --output-directory=/home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/diagonal/fifo_512x128_d/fifo_512x128_d --family="Arria 10" --part=10AX115S2F45I1SG
+Progress: Loading fifo_512x128_d/fifo_512x128_d.qsys
+Progress: Reading input file
+Progress: Adding fifo_0 [fifo 16.1]
+Progress: Parameterizing module fifo_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+: fifo_512x128_d.fifo_0: Targeting device family: Arria 10.
+: fifo_512x128_d.fifo_0: Tab: 'DCFIFO 1' is unavailable while using Single-Clock FIFO.
+: fifo_512x128_d.fifo_0: Tab: 'DCFIFO 2' is unavailable while using Single-Clock FIFO.
+Info: fifo_512x128_d: "Transforming system: fifo_512x128_d"
+Info: fifo_512x128_d: Running transform generation_view_transform
+Info: fifo_512x128_d: Running transform generation_view_transform took 0.000s
+Info: fifo_0: Running transform generation_view_transform
+Info: fifo_0: Running transform generation_view_transform took 0.000s
+Info: fifo_512x128_d: Running transform merlin_avalon_transform
+Info: fifo_512x128_d: Running transform merlin_avalon_transform took 0.046s
+Info: fifo_512x128_d: "Naming system components in system: fifo_512x128_d"
+Info: fifo_512x128_d: "Processing generation queue"
+Info: fifo_512x128_d: "Generating: fifo_512x128_d"
+Info: fifo_512x128_d: "Generating: fifo_512x128_d_fifo_161_myzf2pa"
+Info: fifo_512x128_d: Done "fifo_512x128_d" with 2 modules, 3 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

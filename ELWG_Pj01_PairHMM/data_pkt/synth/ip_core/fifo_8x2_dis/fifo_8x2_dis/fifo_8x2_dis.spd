@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="fifo_161/sim/fifo_8x2_dis_fifo_161_bc7oxmi.v"
+   type="VERILOG"
+   library="fifo_8x2_dis_fifo_161" />
+ <file
+   path="sim/fifo_8x2_dis.v"
+   type="VERILOG"
+   hasInlineConfiguration="true" />
+ <topLevel name="fifo_8x2_dis" />
+ <deviceFamily name="arria10" />
+</simPackage>

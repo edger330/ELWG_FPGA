@@ -1,0 +1,19 @@
+# system info fifo_1024x128 on 2017.11.16.14:57:38
+system_info:
+name,value
+DEVICE,10AX115S2F45I1SG
+DEVICE_FAMILY,Arria 10
+GENERATION_ID,1510815457
+#
+#
+# Files generated for fifo_1024x128 on 2017.11.16.14:57:38
+files:
+filepath,kind,attributes,module,is_top
+sim/fifo_1024x128.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,fifo_1024x128,true
+fifo_161/sim/fifo_1024x128_fifo_161_j6ksvyq.v,VERILOG,,fifo_1024x128_fifo_161_j6ksvyq,false
+fifo_161/sim/fifo_1024x128_fifo_161_j6ksvyq.sdc,SDC,,fifo_1024x128_fifo_161_j6ksvyq,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+fifo_1024x128.fifo_0,fifo_1024x128_fifo_161_j6ksvyq

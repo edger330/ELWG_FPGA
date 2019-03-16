@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="altera_iopll_161/sim/pll_125m_altera_iopll_161_5zboggi.vo"
+   type="VERILOG"
+   library="pll_125m_altera_iopll_161" />
+ <file path="sim/pll_125m.v" type="VERILOG" hasInlineConfiguration="true" />
+ <topLevel name="pll_125m" />
+ <deviceFamily name="arria10" />
+</simPackage>

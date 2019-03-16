@@ -1,0 +1,20 @@
+# system info fp_sub on 2017.11.27.17:02:17
+system_info:
+name,value
+DEVICE,10AX115S2F45I2SG
+DEVICE_FAMILY,Arria 10
+GENERATION_ID,1511773332
+#
+#
+# Files generated for fp_sub on 2017.11.27.17:02:17
+files:
+filepath,kind,attributes,module,is_top
+sim/fp_sub.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,fp_sub,true
+altera_fp_functions_161/sim/dspba_library_package.vhd,VHDL,,fp_sub_altera_fp_functions_161_2aqu3xy,false
+altera_fp_functions_161/sim/dspba_library.vhd,VHDL,,fp_sub_altera_fp_functions_161_2aqu3xy,false
+altera_fp_functions_161/sim/fp_sub_altera_fp_functions_161_2aqu3xy.vhd,VHDL,,fp_sub_altera_fp_functions_161_2aqu3xy,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+fp_sub.fp_functions_0,fp_sub_altera_fp_functions_161_2aqu3xy

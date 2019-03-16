@@ -1,0 +1,90 @@
+Info: Starting: Create simulation model
+Info: qsys-generate E:\STUDY\quartus_examples\diagonal\synth\ip_core\fifo_X\fifo_X.qsys --simulation=VERILOG --allow-mixed-language-simulation --output-directory=E:\STUDY\quartus_examples\diagonal\synth\ip_core\fifo_X\fifo_X --family="Arria 10" --part=10AX115S2F45I2SG
+Progress: Loading fifo_X/fifo_X.qsys
+Progress: Reading input file
+Progress: Adding fifo_0 [fifo 16.1]
+Progress: Parameterizing module fifo_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+: fifo_X.fifo_0: Targeting device family: Arria 10.
+: fifo_X.fifo_0: Tab: 'DCFIFO 1' is unavailable while using Single-Clock FIFO.
+: fifo_X.fifo_0: Tab: 'DCFIFO 2' is unavailable while using Single-Clock FIFO.
+Info: fifo_X: "Transforming system: fifo_X"
+Info: fifo_X: Running transform generation_view_transform
+Info: fifo_X: Running transform generation_view_transform took 0.000s
+Info: fifo_0: Running transform generation_view_transform
+Info: fifo_0: Running transform generation_view_transform took 0.000s
+Info: fifo_X: Running transform merlin_avalon_transform
+Info: fifo_X: Running transform merlin_avalon_transform took 0.032s
+Info: fifo_X: "Naming system components in system: fifo_X"
+Info: fifo_X: "Processing generation queue"
+Info: fifo_X: "Generating: fifo_X"
+Info: fifo_X: "Generating: fifo_X_fifo_161_skz73ra"
+Info: fifo_X: Done "fifo_X" with 2 modules, 2 files
+Info: qsys-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=E:\STUDY\quartus_examples\diagonal\synth\ip_core\fifo_X\fifo_X\fifo_X.spd --output-directory=E:/STUDY/quartus_examples/diagonal/synth/ip_core/fifo_X/fifo_X/sim/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=E:\STUDY\quartus_examples\diagonal\synth\ip_core\fifo_X\fifo_X\fifo_X.spd --output-directory=E:/STUDY/quartus_examples/diagonal/synth/ip_core/fifo_X/fifo_X/sim/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in E:/STUDY/quartus_examples/diagonal/synth/ip_core/fifo_X/fifo_X/sim/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Generating the following file(s) for VCS simulator in E:/STUDY/quartus_examples/diagonal/synth/ip_core/fifo_X/fifo_X/sim/ directory:
+Info: 	synopsys/vcs/vcs_setup.sh
+Info: Generating the following file(s) for VCSMX simulator in E:/STUDY/quartus_examples/diagonal/synth/ip_core/fifo_X/fifo_X/sim/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in E:/STUDY/quartus_examples/diagonal/synth/ip_core/fifo_X/fifo_X/sim/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	1 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in E:/STUDY/quartus_examples/diagonal/synth/ip_core/fifo_X/fifo_X/sim/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under E:/STUDY/quartus_examples/diagonal/synth/ip_core/fifo_X/fifo_X/sim/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate E:\STUDY\quartus_examples\diagonal\synth\ip_core\fifo_X\fifo_X.qsys --block-symbol-file --output-directory=E:\STUDY\quartus_examples\diagonal\synth\ip_core\fifo_X\fifo_X --family="Arria 10" --part=10AX115S2F45I2SG
+Progress: Loading fifo_X/fifo_X.qsys
+Progress: Reading input file
+Progress: Adding fifo_0 [fifo 16.1]
+Progress: Parameterizing module fifo_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+: fifo_X.fifo_0: Targeting device family: Arria 10.
+: fifo_X.fifo_0: Tab: 'DCFIFO 1' is unavailable while using Single-Clock FIFO.
+: fifo_X.fifo_0: Tab: 'DCFIFO 2' is unavailable while using Single-Clock FIFO.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate E:\STUDY\quartus_examples\diagonal\synth\ip_core\fifo_X\fifo_X.qsys --synthesis=VERILOG --output-directory=E:\STUDY\quartus_examples\diagonal\synth\ip_core\fifo_X\fifo_X --family="Arria 10" --part=10AX115S2F45I2SG
+Progress: Loading fifo_X/fifo_X.qsys
+Progress: Reading input file
+Progress: Adding fifo_0 [fifo 16.1]
+Progress: Parameterizing module fifo_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+: fifo_X.fifo_0: Targeting device family: Arria 10.
+: fifo_X.fifo_0: Tab: 'DCFIFO 1' is unavailable while using Single-Clock FIFO.
+: fifo_X.fifo_0: Tab: 'DCFIFO 2' is unavailable while using Single-Clock FIFO.
+Info: fifo_X: "Transforming system: fifo_X"
+Info: fifo_X: Running transform generation_view_transform
+Info: fifo_X: Running transform generation_view_transform took 0.000s
+Info: fifo_0: Running transform generation_view_transform
+Info: fifo_0: Running transform generation_view_transform took 0.000s
+Info: fifo_X: Running transform merlin_avalon_transform
+Info: fifo_X: Running transform merlin_avalon_transform took 0.008s
+Info: fifo_X: "Naming system components in system: fifo_X"
+Info: fifo_X: "Processing generation queue"
+Info: fifo_X: "Generating: fifo_X"
+Info: fifo_X: "Generating: fifo_X_fifo_161_skz73ra"
+Info: fifo_X: Done "fifo_X" with 2 modules, 3 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

@@ -1,0 +1,278 @@
+Info: Starting: Create simulation model
+Info: qsys-generate /home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/ddr4_core/ddr4_core.qsys --simulation=VERILOG --allow-mixed-language-simulation --output-directory=/home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/ddr4_core/ddr4_core --family="Arria 10" --part=10AX115S2F45I1SG
+Progress: Loading ddr4_core/ddr4_core.qsys
+Progress: Reading input file
+Progress: Adding emif_0 [altera_emif 16.1]
+Progress: Parameterizing module emif_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: ddr4_core.emif_0: The selected board is 'Arria 10 GX FPGA Development Kit with DDR4 HILO'. Ensure that a development kit preset is applied before generating the example design; do not modify the IP parameters. For verified development kit test results, the selected development kit preset text should be bolded in the Presets panel.
+Info: ddr4_core.emif_0.arch: Periodic OCT re-calibration is disabled because the interface uses calibrated IO standards for either Address, Command or Clock signals.
+Info: ddr4_core.emif_0.arch: PHY and controller running at 2x the frequency of user logic for improved efficiency.
+Info: ddr4_core.emif_0.arch: Placement of address/command pins must follow "DDR4 Scheme 4: Component/UDIMM/RDIMM".
+Info: ddr4_core.emif_0.arch: Interface estimated to require 3 I/O Bank(s) and 3 I/O PLL(s). This is only an estimation. Final usage depends on user pin location assignments and/or fitter behavior.
+Info: ddr4_core.emif_0.arch: Valid memory frequencies for the current PLL reference clock and user clock rate, in MHz: 1066.66
+Info: ddr4_core.emif_0.arch: For additional documentation about the interface, consult the *_readme.txt file after generation.
+Info: ddr4_core: "Transforming system: ddr4_core"
+Info: ddr4_core: Running transform generation_view_transform
+Info: ddr4_core: Running transform generation_view_transform took 0.000s
+Info: emif_0: Running transform generation_view_transform
+Info: emif_0: Running transform generation_view_transform took 0.000s
+Info: arch: Running transform generation_view_transform
+Info: arch: Running transform generation_view_transform took 0.000s
+Info: col_if: Running transform generation_view_transform
+Info: col_if: Running transform generation_view_transform took 0.000s
+Info: cal_slave_component: Running transform generation_view_transform
+Info: cal_slave_component: Running transform generation_view_transform took 0.000s
+Info: clk_bridge: Running transform generation_view_transform
+Info: clk_bridge: Running transform generation_view_transform took 0.000s
+Info: rst_bridge: Running transform generation_view_transform
+Info: rst_bridge: Running transform generation_view_transform took 0.000s
+Info: avl_bridge_out: Running transform generation_view_transform
+Info: avl_bridge_out: Running transform generation_view_transform took 0.000s
+Info: colmaster: Running transform generation_view_transform
+Info: colmaster: Running transform generation_view_transform took 0.000s
+Info: clk_bridge: Running transform generation_view_transform
+Info: clk_bridge: Running transform generation_view_transform took 0.000s
+Info: rst_bridge: Running transform generation_view_transform
+Info: rst_bridge: Running transform generation_view_transform took 0.000s
+Info: ioaux_master_bridge: Running transform generation_view_transform
+Info: ioaux_master_bridge: Running transform generation_view_transform took 0.000s
+Info: ioaux_soft_ram: Running transform generation_view_transform
+Info: ioaux_soft_ram: Running transform generation_view_transform took 0.000s
+Info: clk_src: Running transform generation_view_transform
+Info: clk_src: Running transform generation_view_transform took 0.000s
+Info: clk_rst: Running transform generation_view_transform
+Info: clk_rst: Running transform generation_view_transform took 0.000s
+Info: jtag_phy_embedded_in_jtag_master: Running transform generation_view_transform
+Info: jtag_phy_embedded_in_jtag_master: Running transform generation_view_transform took 0.000s
+Info: timing_adt: Running transform generation_view_transform
+Info: timing_adt: Running transform generation_view_transform took 0.000s
+Info: fifo: Running transform generation_view_transform
+Info: fifo: Running transform generation_view_transform took 0.000s
+Info: b2p: Running transform generation_view_transform
+Info: b2p: Running transform generation_view_transform took 0.000s
+Info: p2b: Running transform generation_view_transform
+Info: p2b: Running transform generation_view_transform took 0.000s
+Info: transacto: Running transform generation_view_transform
+Info: transacto: Running transform generation_view_transform took 0.000s
+Info: b2p_adapter: Running transform generation_view_transform
+Info: b2p_adapter: Running transform generation_view_transform took 0.000s
+Info: p2b_adapter: Running transform generation_view_transform
+Info: p2b_adapter: Running transform generation_view_transform took 0.000s
+Info: ddr4_core: Running transform merlin_avalon_transform
+Info: ddr4_core: Running transform merlin_avalon_transform took 0.029s
+Info: emif_0: Running transform merlin_avalon_transform
+Info: Interconnect is inserted between master col_if.to_ioaux and slave arch.cal_debug because the master has burstcount signal 1 bit wide, but the slave is 0 bit wide.
+Info: Interconnect is inserted between master col_if.to_ioaux and slave arch.cal_debug because the master has address signal 30 bit wide, but the slave is 24 bit wide.
+Info: Interconnect is inserted between master col_if.to_ioaux and slave arch.cal_debug because the master has debugaccess signal 1 bit wide, but the slave is 0 bit wide.
+Info: emif_0: Running transform merlin_avalon_transform took 0.284s
+Info: col_if: Running transform merlin_avalon_transform
+Info: Interconnect is inserted between master colmaster.master and slave avl_bridge_out.s0 because the master has address signal 32 bit wide, but the slave is 30 bit wide.
+Info: col_if: Running transform merlin_avalon_transform took 0.125s
+Info: cal_slave_component: Running transform merlin_avalon_transform
+Info: Interconnect is inserted between master ioaux_master_bridge.m0 and slave ioaux_soft_ram.s1 because the master has waitrequest signal 1 bit wide, but the slave is 0 bit wide.
+Info: Interconnect is inserted between master ioaux_master_bridge.m0 and slave ioaux_soft_ram.s1 because the master has readdatavalid signal 1 bit wide, but the slave is 0 bit wide.
+Info: Interconnect is inserted between master ioaux_master_bridge.m0 and slave ioaux_soft_ram.s1 because the master has burstcount signal 1 bit wide, but the slave is 0 bit wide.
+Info: Interconnect is inserted between master ioaux_master_bridge.m0 and slave ioaux_soft_ram.s1 because the master has address signal 16 bit wide, but the slave is 12 bit wide.
+Info: Interconnect is inserted between master ioaux_master_bridge.m0 and slave ioaux_soft_ram.s1 because the master has read signal 1 bit wide, but the slave is 0 bit wide.
+Info: cal_slave_component: Running transform merlin_avalon_transform took 0.162s
+Info: mm_interconnect_0: Running transform merlin_avalon_transform
+Info: mm_interconnect_0: Running transform merlin_avalon_transform took 0.035s
+Info: colmaster: Running transform merlin_avalon_transform
+Info: colmaster: Running transform merlin_avalon_transform took 0.015s
+Info: mm_interconnect_0: Running transform merlin_avalon_transform
+Info: mm_interconnect_0: Running transform merlin_avalon_transform took 0.041s
+Info: mm_interconnect_0: Running transform merlin_avalon_transform
+Info: mm_interconnect_0: Running transform merlin_avalon_transform took 0.036s
+Info: ddr4_core: "Naming system components in system: ddr4_core"
+Info: ddr4_core: "Processing generation queue"
+Info: ddr4_core: "Generating: ddr4_core"
+Info: ddr4_core: "Generating: ddr4_core_altera_emif_161_lsd7o4q"
+Info: ddr4_core: "Generating: ddr4_core_altera_emif_arch_nf_161_bgkg3xi"
+Info: ddr4_core: "Generating: ddr4_core_altera_ip_col_if_161_foc7v3q"
+Info: ddr4_core: "Generating: ddr4_core_altera_emif_cal_slave_nf_161_m6azz7i"
+Info: ddr4_core: "Generating: ddr4_core_altera_mm_interconnect_161_wl6t3li"
+Info: ddr4_core: "Generating: altera_avalon_mm_bridge"
+Info: ddr4_core: "Generating: ddr4_core_alt_mem_if_jtag_master_161_s34bviy"
+Info: ddr4_core: "Generating: ddr4_core_altera_mm_interconnect_161_x5yuuaa"
+Info: ddr4_core: "Generating: ddr4_core_altera_avalon_onchip_memory2_161_ouhlr2a"
+Info: ioaux_soft_ram: Starting RTL generation for module 'ddr4_core_altera_avalon_onchip_memory2_161_ouhlr2a'
+Info: ioaux_soft_ram:   Generation command is [exec /home/gpu_server4/intelFPGA/16.1/quartus/linux64/perl/bin/perl -I /home/gpu_server4/intelFPGA/16.1/quartus/linux64/perl/lib -I /home/gpu_server4/intelFPGA/16.1/quartus/sopc_builder/bin/europa -I /home/gpu_server4/intelFPGA/16.1/quartus/sopc_builder/bin/perl_lib -I /home/gpu_server4/intelFPGA/16.1/quartus/sopc_builder/bin -I /home/gpu_server4/intelFPGA/16.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/gpu_server4/intelFPGA/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /home/gpu_server4/intelFPGA/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=ddr4_core_altera_avalon_onchip_memory2_161_ouhlr2a --dir=/tmp/alt7460_1404441131040032395.dir/0003_ioaux_soft_ram_gen/ --quartus_dir=/home/gpu_server4/intelFPGA/16.1/quartus --verilog --config=/tmp/alt7460_1404441131040032395.dir/0003_ioaux_soft_ram_gen//ddr4_core_altera_avalon_onchip_memory2_161_ouhlr2a_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt7460_1404441131040032395.dir/0003_ioaux_soft_ram_gen/  ]
+Info: ioaux_soft_ram: Done RTL generation for module 'ddr4_core_altera_avalon_onchip_memory2_161_ouhlr2a'
+Info: ddr4_core: "Generating: ddr4_core_altera_mm_interconnect_161_rjywn6y"
+Info: ddr4_core: "Generating: altera_reset_controller"
+Info: ddr4_core: "Generating: altera_merlin_master_translator"
+Info: ddr4_core: "Generating: altera_merlin_slave_translator"
+Info: ddr4_core: "Generating: altera_avalon_st_jtag_interface"
+Info: ddr4_core: "Generating: ddr4_core_timing_adapter_161_u532i6q"
+Info: ddr4_core: "Generating: altera_avalon_sc_fifo"
+Info: ddr4_core: "Generating: altera_avalon_st_bytes_to_packets"
+Info: ddr4_core: "Generating: altera_avalon_st_packets_to_bytes"
+Info: ddr4_core: "Generating: altera_avalon_packets_to_master"
+Info: ddr4_core: "Generating: ddr4_core_channel_adapter_161_fcviibi"
+Info: ddr4_core: "Generating: ddr4_core_channel_adapter_161_xd7xncy"
+Info: ddr4_core: Done "ddr4_core" with 22 modules, 78 files
+Info: qsys-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=/home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/ddr4_core/ddr4_core/ddr4_core.spd --output-directory=/home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/ddr4_core/ddr4_core/sim/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=/home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/ddr4_core/ddr4_core/ddr4_core.spd --output-directory=/home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/ddr4_core/ddr4_core/sim/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in /home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/ddr4_core/ddr4_core/sim/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Generating the following file(s) for VCS simulator in /home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/ddr4_core/ddr4_core/sim/ directory:
+Info: 	synopsys/vcs/vcs_setup.sh
+Info: Generating the following file(s) for VCSMX simulator in /home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/ddr4_core/ddr4_core/sim/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in /home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/ddr4_core/ddr4_core/sim/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	18 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in /home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/ddr4_core/ddr4_core/sim/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under /home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/ddr4_core/ddr4_core/sim/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/ddr4_core/ddr4_core.qsys --block-symbol-file --output-directory=/home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/ddr4_core/ddr4_core --family="Arria 10" --part=10AX115S2F45I1SG
+Progress: Loading ddr4_core/ddr4_core.qsys
+Progress: Reading input file
+Progress: Adding emif_0 [altera_emif 16.1]
+Progress: Parameterizing module emif_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: ddr4_core.emif_0: The selected board is 'Arria 10 GX FPGA Development Kit with DDR4 HILO'. Ensure that a development kit preset is applied before generating the example design; do not modify the IP parameters. For verified development kit test results, the selected development kit preset text should be bolded in the Presets panel.
+Info: ddr4_core.emif_0.arch: Periodic OCT re-calibration is disabled because the interface uses calibrated IO standards for either Address, Command or Clock signals.
+Info: ddr4_core.emif_0.arch: PHY and controller running at 2x the frequency of user logic for improved efficiency.
+Info: ddr4_core.emif_0.arch: Placement of address/command pins must follow "DDR4 Scheme 4: Component/UDIMM/RDIMM".
+Info: ddr4_core.emif_0.arch: Interface estimated to require 3 I/O Bank(s) and 3 I/O PLL(s). This is only an estimation. Final usage depends on user pin location assignments and/or fitter behavior.
+Info: ddr4_core.emif_0.arch: Valid memory frequencies for the current PLL reference clock and user clock rate, in MHz: 1066.66
+Info: ddr4_core.emif_0.arch: For additional documentation about the interface, consult the *_readme.txt file after generation.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/ddr4_core/ddr4_core.qsys --synthesis=VERILOG --output-directory=/home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/ddr4_core/ddr4_core --family="Arria 10" --part=10AX115S2F45I1SG
+Progress: Loading ddr4_core/ddr4_core.qsys
+Progress: Reading input file
+Progress: Adding emif_0 [altera_emif 16.1]
+Progress: Parameterizing module emif_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: ddr4_core.emif_0: The selected board is 'Arria 10 GX FPGA Development Kit with DDR4 HILO'. Ensure that a development kit preset is applied before generating the example design; do not modify the IP parameters. For verified development kit test results, the selected development kit preset text should be bolded in the Presets panel.
+Info: ddr4_core.emif_0.arch: Periodic OCT re-calibration is disabled because the interface uses calibrated IO standards for either Address, Command or Clock signals.
+Info: ddr4_core.emif_0.arch: PHY and controller running at 2x the frequency of user logic for improved efficiency.
+Info: ddr4_core.emif_0.arch: Placement of address/command pins must follow "DDR4 Scheme 4: Component/UDIMM/RDIMM".
+Info: ddr4_core.emif_0.arch: Interface estimated to require 3 I/O Bank(s) and 3 I/O PLL(s). This is only an estimation. Final usage depends on user pin location assignments and/or fitter behavior.
+Info: ddr4_core.emif_0.arch: Valid memory frequencies for the current PLL reference clock and user clock rate, in MHz: 1066.66
+Info: ddr4_core.emif_0.arch: For additional documentation about the interface, consult the *_readme.txt file after generation.
+Info: ddr4_core: "Transforming system: ddr4_core"
+Info: ddr4_core: Running transform generation_view_transform
+Info: ddr4_core: Running transform generation_view_transform took 0.000s
+Info: emif_0: Running transform generation_view_transform
+Info: emif_0: Running transform generation_view_transform took 0.000s
+Info: arch: Running transform generation_view_transform
+Info: arch: Running transform generation_view_transform took 0.000s
+Info: col_if: Running transform generation_view_transform
+Info: col_if: Running transform generation_view_transform took 0.000s
+Info: cal_slave_component: Running transform generation_view_transform
+Info: cal_slave_component: Running transform generation_view_transform took 0.000s
+Info: clk_bridge: Running transform generation_view_transform
+Info: clk_bridge: Running transform generation_view_transform took 0.000s
+Info: rst_bridge: Running transform generation_view_transform
+Info: rst_bridge: Running transform generation_view_transform took 0.000s
+Info: avl_bridge_out: Running transform generation_view_transform
+Info: avl_bridge_out: Running transform generation_view_transform took 0.000s
+Info: colmaster: Running transform generation_view_transform
+Info: colmaster: Running transform generation_view_transform took 0.000s
+Info: clk_bridge: Running transform generation_view_transform
+Info: clk_bridge: Running transform generation_view_transform took 0.000s
+Info: rst_bridge: Running transform generation_view_transform
+Info: rst_bridge: Running transform generation_view_transform took 0.000s
+Info: ioaux_master_bridge: Running transform generation_view_transform
+Info: ioaux_master_bridge: Running transform generation_view_transform took 0.000s
+Info: ioaux_soft_ram: Running transform generation_view_transform
+Info: ioaux_soft_ram: Running transform generation_view_transform took 0.000s
+Info: clk_src: Running transform generation_view_transform
+Info: clk_src: Running transform generation_view_transform took 0.000s
+Info: clk_rst: Running transform generation_view_transform
+Info: clk_rst: Running transform generation_view_transform took 0.000s
+Info: jtag_phy_embedded_in_jtag_master: Running transform generation_view_transform
+Info: jtag_phy_embedded_in_jtag_master: Running transform generation_view_transform took 0.000s
+Info: timing_adt: Running transform generation_view_transform
+Info: timing_adt: Running transform generation_view_transform took 0.000s
+Info: fifo: Running transform generation_view_transform
+Info: fifo: Running transform generation_view_transform took 0.000s
+Info: b2p: Running transform generation_view_transform
+Info: b2p: Running transform generation_view_transform took 0.000s
+Info: p2b: Running transform generation_view_transform
+Info: p2b: Running transform generation_view_transform took 0.000s
+Info: transacto: Running transform generation_view_transform
+Info: transacto: Running transform generation_view_transform took 0.000s
+Info: b2p_adapter: Running transform generation_view_transform
+Info: b2p_adapter: Running transform generation_view_transform took 0.000s
+Info: p2b_adapter: Running transform generation_view_transform
+Info: p2b_adapter: Running transform generation_view_transform took 0.000s
+Info: ddr4_core: Running transform merlin_avalon_transform
+Info: ddr4_core: Running transform merlin_avalon_transform took 0.008s
+Info: emif_0: Running transform merlin_avalon_transform
+Info: Interconnect is inserted between master col_if.to_ioaux and slave arch.cal_debug because the master has burstcount signal 1 bit wide, but the slave is 0 bit wide.
+Info: Interconnect is inserted between master col_if.to_ioaux and slave arch.cal_debug because the master has address signal 30 bit wide, but the slave is 24 bit wide.
+Info: Interconnect is inserted between master col_if.to_ioaux and slave arch.cal_debug because the master has debugaccess signal 1 bit wide, but the slave is 0 bit wide.
+Info: emif_0: Running transform merlin_avalon_transform took 0.143s
+Info: col_if: Running transform merlin_avalon_transform
+Info: Interconnect is inserted between master colmaster.master and slave avl_bridge_out.s0 because the master has address signal 32 bit wide, but the slave is 30 bit wide.
+Info: col_if: Running transform merlin_avalon_transform took 0.144s
+Info: cal_slave_component: Running transform merlin_avalon_transform
+Info: Interconnect is inserted between master ioaux_master_bridge.m0 and slave ioaux_soft_ram.s1 because the master has waitrequest signal 1 bit wide, but the slave is 0 bit wide.
+Info: Interconnect is inserted between master ioaux_master_bridge.m0 and slave ioaux_soft_ram.s1 because the master has readdatavalid signal 1 bit wide, but the slave is 0 bit wide.
+Info: Interconnect is inserted between master ioaux_master_bridge.m0 and slave ioaux_soft_ram.s1 because the master has burstcount signal 1 bit wide, but the slave is 0 bit wide.
+Info: Interconnect is inserted between master ioaux_master_bridge.m0 and slave ioaux_soft_ram.s1 because the master has address signal 16 bit wide, but the slave is 12 bit wide.
+Info: Interconnect is inserted between master ioaux_master_bridge.m0 and slave ioaux_soft_ram.s1 because the master has read signal 1 bit wide, but the slave is 0 bit wide.
+Info: cal_slave_component: Running transform merlin_avalon_transform took 0.114s
+Info: mm_interconnect_0: Running transform merlin_avalon_transform
+Info: mm_interconnect_0: Running transform merlin_avalon_transform took 0.034s
+Info: colmaster: Running transform merlin_avalon_transform
+Info: colmaster: Running transform merlin_avalon_transform took 0.015s
+Info: mm_interconnect_0: Running transform merlin_avalon_transform
+Info: mm_interconnect_0: Running transform merlin_avalon_transform took 0.035s
+Info: mm_interconnect_0: Running transform merlin_avalon_transform
+Info: mm_interconnect_0: Running transform merlin_avalon_transform took 0.037s
+Info: ddr4_core: "Naming system components in system: ddr4_core"
+Info: ddr4_core: "Processing generation queue"
+Info: ddr4_core: "Generating: ddr4_core"
+Info: ddr4_core: "Generating: ddr4_core_altera_emif_161_lsd7o4q"
+Info: ddr4_core: "Generating: ddr4_core_altera_emif_arch_nf_161_bgkg3xi"
+Info: ddr4_core: "Generating: ddr4_core_altera_ip_col_if_161_foc7v3q"
+Info: ddr4_core: "Generating: ddr4_core_altera_emif_cal_slave_nf_161_m6azz7i"
+Info: ddr4_core: "Generating: ddr4_core_altera_mm_interconnect_161_wl6t3li"
+Info: ddr4_core: "Generating: altera_avalon_mm_bridge"
+Info: ddr4_core: "Generating: ddr4_core_alt_mem_if_jtag_master_161_s34bviy"
+Info: ddr4_core: "Generating: ddr4_core_altera_mm_interconnect_161_x5yuuaa"
+Info: ddr4_core: "Generating: ddr4_core_altera_avalon_onchip_memory2_161_ouhlr2a"
+Info: ioaux_soft_ram: Starting RTL generation for module 'ddr4_core_altera_avalon_onchip_memory2_161_ouhlr2a'
+Info: ioaux_soft_ram:   Generation command is [exec /home/gpu_server4/intelFPGA/16.1/quartus/linux64/perl/bin/perl -I /home/gpu_server4/intelFPGA/16.1/quartus/linux64/perl/lib -I /home/gpu_server4/intelFPGA/16.1/quartus/sopc_builder/bin/europa -I /home/gpu_server4/intelFPGA/16.1/quartus/sopc_builder/bin/perl_lib -I /home/gpu_server4/intelFPGA/16.1/quartus/sopc_builder/bin -I /home/gpu_server4/intelFPGA/16.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/gpu_server4/intelFPGA/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /home/gpu_server4/intelFPGA/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=ddr4_core_altera_avalon_onchip_memory2_161_ouhlr2a --dir=/tmp/alt7460_1404441131040032395.dir/0018_ioaux_soft_ram_gen/ --quartus_dir=/home/gpu_server4/intelFPGA/16.1/quartus --verilog --config=/tmp/alt7460_1404441131040032395.dir/0018_ioaux_soft_ram_gen//ddr4_core_altera_avalon_onchip_memory2_161_ouhlr2a_component_configuration.pl  --do_build_sim=0  ]
+Info: ioaux_soft_ram: Done RTL generation for module 'ddr4_core_altera_avalon_onchip_memory2_161_ouhlr2a'
+Info: ddr4_core: "Generating: ddr4_core_altera_mm_interconnect_161_rjywn6y"
+Info: ddr4_core: "Generating: altera_reset_controller"
+Info: ddr4_core: "Generating: altera_merlin_master_translator"
+Info: ddr4_core: "Generating: altera_merlin_slave_translator"
+Info: ddr4_core: "Generating: altera_avalon_st_jtag_interface"
+Info: ddr4_core: "Generating: ddr4_core_timing_adapter_161_u532i6q"
+Info: ddr4_core: "Generating: altera_avalon_sc_fifo"
+Info: ddr4_core: "Generating: altera_avalon_st_bytes_to_packets"
+Info: ddr4_core: "Generating: altera_avalon_st_packets_to_bytes"
+Info: ddr4_core: "Generating: altera_avalon_packets_to_master"
+Info: ddr4_core: "Generating: ddr4_core_channel_adapter_161_fcviibi"
+Info: ddr4_core: "Generating: ddr4_core_channel_adapter_161_xd7xncy"
+Info: ddr4_core: Done "ddr4_core" with 22 modules, 88 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

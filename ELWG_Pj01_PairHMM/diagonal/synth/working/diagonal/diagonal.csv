@@ -1,0 +1,20 @@
+# system info diagonal on 2017.11.27.16:57:04
+system_info:
+name,value
+DEVICE,10AX115S2F45I2SG
+DEVICE_FAMILY,Arria 10
+GENERATION_ID,1511773020
+#
+#
+# Files generated for diagonal on 2017.11.27.16:57:04
+files:
+filepath,kind,attributes,module,is_top
+sim/diagonal.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,diagonal,true
+altera_fp_functions_161/sim/dspba_library_package.vhd,VHDL,,diagonal_altera_fp_functions_161_4gfcm3q,false
+altera_fp_functions_161/sim/dspba_library.vhd,VHDL,,diagonal_altera_fp_functions_161_4gfcm3q,false
+altera_fp_functions_161/sim/diagonal_altera_fp_functions_161_4gfcm3q.vhd,VHDL,,diagonal_altera_fp_functions_161_4gfcm3q,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+diagonal.fp_functions_0,diagonal_altera_fp_functions_161_4gfcm3q

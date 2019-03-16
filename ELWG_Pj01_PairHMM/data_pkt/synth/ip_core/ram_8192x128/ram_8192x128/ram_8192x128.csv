@@ -1,0 +1,18 @@
+# system info ram_8192x128 on 2017.10.21.23:07:56
+system_info:
+name,value
+DEVICE,10AX115S2F45I1SG
+DEVICE_FAMILY,Arria 10
+GENERATION_ID,1508598476
+#
+#
+# Files generated for ram_8192x128 on 2017.10.21.23:07:56
+files:
+filepath,kind,attributes,module,is_top
+sim/ram_8192x128.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,ram_8192x128,true
+ram_2port_161/sim/ram_8192x128_ram_2port_161_rjsjy2a.v,VERILOG,,ram_8192x128_ram_2port_161_rjsjy2a,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+ram_8192x128.ram_2port_0,ram_8192x128_ram_2port_161_rjsjy2a

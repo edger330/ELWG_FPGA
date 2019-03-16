@@ -1,0 +1,18 @@
+# system info fifo_8x512_dis on 2017.11.01.15:37:19
+system_info:
+name,value
+DEVICE,10AX115S2F45I1SG
+DEVICE_FAMILY,Arria 10
+GENERATION_ID,1509521839
+#
+#
+# Files generated for fifo_8x512_dis on 2017.11.01.15:37:19
+files:
+filepath,kind,attributes,module,is_top
+sim/fifo_8x512_dis.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,fifo_8x512_dis,true
+fifo_161/sim/fifo_8x512_dis_fifo_161_niqd2pa.v,VERILOG,,fifo_8x512_dis_fifo_161_niqd2pa,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+fifo_8x512_dis.fifo_0,fifo_8x512_dis_fifo_161_niqd2pa

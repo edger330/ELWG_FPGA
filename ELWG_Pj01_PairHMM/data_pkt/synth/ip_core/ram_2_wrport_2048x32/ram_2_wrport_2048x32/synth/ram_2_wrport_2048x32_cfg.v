@@ -1,0 +1,5 @@
+config ram_2_wrport_2048x32_cfg;
+		design ram_2_wrport_2048x32;
+		instance ram_2_wrport_2048x32.ram_2port_0 use ram_2_wrport_2048x32_ram_2port_161.ram_2_wrport_2048x32_ram_2port_161_ywraana;
+endconfig
+

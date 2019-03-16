@@ -1,0 +1,18 @@
+# system info Rom_Check0 on 2017.12.12.17:10:07
+system_info:
+name,value
+DEVICE,10AX115S2F45I1SG
+DEVICE_FAMILY,Arria 10
+GENERATION_ID,1513069807
+#
+#
+# Files generated for Rom_Check0 on 2017.12.12.17:10:07
+files:
+filepath,kind,attributes,module,is_top
+sim/Rom_Check0.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,Rom_Check0,true
+rom_1port_161/sim/Rom_Check0_rom_1port_161_famoz4a.v,VERILOG,,Rom_Check0_rom_1port_161_famoz4a,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+Rom_Check0.rom_1port_0,Rom_Check0_rom_1port_161_famoz4a

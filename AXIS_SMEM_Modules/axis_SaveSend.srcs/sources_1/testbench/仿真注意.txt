@@ -1,0 +1,7 @@
+1、t_data一直做t_data <= t_data + 1'b1;即可
+
+2、t_valid一直拉高到128个256bit数据传完即可,传完之后将t_valid拉低8个周期,若t_ready仍为高，则继续传输一次128个256bit数据帧。
+
+3、每次传完一组128个256bit的数据帧，将t_last拉高
+
+4、当某个SMEM_Calc的Start为1时，立刻输出busy为1，busy的持续时间由正态分布的随机数决定。

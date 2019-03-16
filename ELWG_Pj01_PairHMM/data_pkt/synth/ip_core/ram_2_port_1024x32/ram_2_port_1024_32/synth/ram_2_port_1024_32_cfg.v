@@ -1,0 +1,5 @@
+config ram_2_port_1024_32_cfg;
+		design ram_2_port_1024_32;
+		instance ram_2_port_1024_32.ram_2port_0 use ram_2_port_1024_32_ram_2port_161.ram_2_port_1024_32_ram_2port_161_r5t2nhi;
+endconfig
+

@@ -1,0 +1,18 @@
+# system info ram_2_port_1024_32 on 2017.06.12.16:34:09
+system_info:
+name,value
+DEVICE,10AX115S1F45I1SG
+DEVICE_FAMILY,Arria 10
+GENERATION_ID,1497256449
+#
+#
+# Files generated for ram_2_port_1024_32 on 2017.06.12.16:34:09
+files:
+filepath,kind,attributes,module,is_top
+sim/ram_2_port_1024_32.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,ram_2_port_1024_32,true
+ram_2port_161/sim/ram_2_port_1024_32_ram_2port_161_r5t2nhi.v,VERILOG,,ram_2_port_1024_32_ram_2port_161_r5t2nhi,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+ram_2_port_1024_32.ram_2port_0,ram_2_port_1024_32_ram_2port_161_r5t2nhi

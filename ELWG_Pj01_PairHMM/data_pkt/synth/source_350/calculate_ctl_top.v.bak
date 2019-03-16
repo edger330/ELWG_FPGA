@@ -1,0 +1,392 @@
+/*********************************************************************
+//  Author:    jyb
+//  Filename:  
+//  Modified:
+//  Version:   1.0
+//
+//  Description:
+//
+//  Copyright (c) 2006   Combrio Networks.
+//
+//  All Rights Reserved.
+//
+//
+// -------------------------------------------------------------------
+//  Modification History:
+//
+//  Date             Who            Description of change
+//  ------------------------------------------------------------------
+//  2017-06-29       jyb             initial version
+//
+**********************************************************************/
+module calculate_ctl_top (
+//core_clk,
+sys_clk,
+sys_rst_n,
+
+matrix_memory_sop,
+matrix_memory_eop,
+matrix_memory_vld,
+matrix_memory_data,
+pkt_enable,
+
+data_write_pcie,
+addr_write_pcie,
+en_write_pcie,
+pcie_read_en,
+pcie_read_done_ack
+
+);
+
+
+/*---------------------------------------------------------------------*\
+                         parameter description 
+\*---------------------------------------------------------------------*/
+parameter  D  =  0.2;
+
+
+parameter MAX_TIME_OUT = 32'd500000000;
+parameter MAX_DATA_NUM = 15'd19200;
+/*---------------------------------------------------------------------*\
+                         port description 
+\*---------------------------------------------------------------------*/
+//global signal
+//input               core_clk;               
+input               sys_clk;
+input               sys_rst_n;
+//
+input               matrix_memory_sop ;
+input               matrix_memory_eop ;
+input               matrix_memory_vld ;
+input     [31:0]    matrix_memory_data;
+output              pkt_enable;
+//
+output    [127:0]   data_write_pcie;
+output    [ 14:0]   addr_write_pcie;
+output              en_write_pcie;
+output 		        pcie_read_en;
+input 		        pcie_read_done_ack;
+
+
+
+
+/*---------------------------------------------------------------------*\
+                         reg/wire description 
+\*---------------------------------------------------------------------*/
+wire      [14:0]     usedw;
+wire                full;
+wire                empty;
+wire                fifo_almost_full;
+wire                f0_fifo_write_en;
+reg                 fifo_write_en;
+wire      [127:0]   f0_fifo_data_in;
+reg       [127:0]   fifo_data_in;
+
+
+reg       [1:0]     shift_reg_in;
+reg                 pkt_receive_enable;
+
+reg                 max_data_num_done;
+reg                 pcie_read_en_reg;
+
+
+
+wire      [127:0]   data_write_pcie;
+wire      [14:0]    addr_write_pcie;
+wire                en_write_pcie;
+reg       [127:0]   full_result;
+reg 		           full_result_vld_temp;
+reg 		           full_result_vld;
+reg                 result_all_done;
+
+reg       [14:0 ]   temp_addr_write_pcie;
+reg                 fifo_read_vld;
+
+
+reg                 pkt0_sop;
+reg                 pkt0_eop;
+reg                 pkt0_vld;
+reg       [31:0]    pkt0_dat;
+wire                pkt0_receive_enable;
+wire                result0_fifo_rden;
+wire      [127:0]   result0_fifo_rdat;
+wire                result0_fifo_empty;
+
+
+
+/*---------------------------------------------------------------------*\
+                         main code 
+\*---------------------------------------------------------------------*/
+ 
+
+assign  pkt_enable =  pkt0_receive_enable;
+
+
+always @(posedge sys_clk  or negedge sys_rst_n) 
+begin 
+	if (!sys_rst_n) begin 
+		pkt0_sop <= #D 1'b0;
+	end else if (pkt0_receive_enable) begin 
+		pkt0_sop <= #D matrix_memory_sop;
+	end else begin 
+		pkt0_sop <= #D 1'b0;
+	end
+end
+
+
+
+always @(posedge sys_clk  or negedge sys_rst_n) 
+begin 
+	if (!sys_rst_n) begin 
+		pkt0_eop <= #D 1'b0;
+	end else if (pkt0_vld) begin 
+		pkt0_eop <= #D matrix_memory_eop;
+	end else begin 
+		pkt0_eop <= #D 1'b0;
+	end
+end
+
+
+
+always @(posedge sys_clk  or negedge sys_rst_n) 
+begin 
+	if (!sys_rst_n) begin 
+		pkt0_vld <= #D 1'b0;
+	end else if (pkt0_receive_enable && matrix_memory_sop) begin 
+		pkt0_vld <= #D 1'b1;
+	end else if (pkt0_eop) begin 
+		pkt0_vld <= #D 1'b0;
+	end
+end
+
+
+
+always @(posedge sys_clk  or negedge sys_rst_n) 
+begin 
+	if (!sys_rst_n) begin 
+		pkt0_dat <= #D 32'd0;
+	end else if (pkt0_vld) begin 
+		pkt0_dat <= #D matrix_memory_data;
+	end else begin 
+		pkt0_dat <= #D 32'd0;
+	end
+end
+
+
+
+//======================================================================================================
+
+
+
+//assign result0_fifo_rden = (~result0_fifo_empty && ~fifo_almost_full);
+
+assign result0_fifo_rden = ~result0_fifo_empty;
+
+
+assign  f0_fifo_write_en = result0_fifo_rden;   
+
+
+assign  f0_fifo_data_in = (result0_fifo_rden)? result0_fifo_rdat : 0; 
+                                     
+  
+wire [127:0] fifo_data_out;
+//---------------------------------------------------------------------
+
+fifo_4096x128 u_fifo_4096x128 (          //      32768
+		.data   (fifo_data_in ), 
+		.wrreq  (fifo_write_en), 
+		.rdreq  (fifo_read_en ), 
+		.clock  (sys_clk      ), 
+		.q      (fifo_data_out),
+		.usedw  (usedw        ), 
+		.full   (full         ), 
+		.empty  (empty        )  
+	);
+
+	
+
+reg [31:0]    counter_empty;
+reg           en_counter_empty;
+reg [14:0]    num_read;
+reg           temp_en_write_pcie;
+reg           all_done;
+
+
+assign fifo_almost_full = (usedw >= 15'd32760); 
+
+always @(posedge sys_clk or negedge sys_rst_n)
+begin 
+	if (!sys_rst_n)
+		en_counter_empty <= 1'b0;
+	else if (f0_fifo_write_en)
+		en_counter_empty <= 1'b1;
+	else if (all_done)
+		en_counter_empty <= 1'b0;
+end
+
+always @(posedge sys_clk or negedge sys_rst_n)
+begin 
+	if (!sys_rst_n)
+		counter_empty <= 32'b0;
+	else if (f0_fifo_write_en || all_done)
+		counter_empty <= 32'b0;
+	else if ((!f0_fifo_write_en) && en_counter_empty)
+		counter_empty <= counter_empty + 32'b1;
+end
+
+always @(posedge sys_clk or negedge sys_rst_n)
+begin 
+	if (!sys_rst_n)
+		all_done <= 1'b0;
+	else if ((temp_addr_write_pcie == MAX_DATA_NUM - 1) && temp_en_write_pcie && all_done )
+		all_done <= 1'b0;
+	else if (counter_empty >= MAX_TIME_OUT)
+		all_done <= 1'b1;
+end
+
+always@(posedge sys_clk or negedge sys_rst_n)
+begin
+  if(!sys_rst_n)
+  	fifo_data_in <= 128'b0;
+  else if (f0_fifo_write_en)
+  	fifo_data_in <= f0_fifo_data_in;
+  else if  (all_done)
+ 	fifo_data_in <= 128'hffffffffffffffffffffffffffffffff;
+  else 
+ 	fifo_data_in <= 128'b0;
+end
+
+always@(posedge sys_clk or negedge sys_rst_n)
+begin
+  if(!sys_rst_n)
+  	fifo_write_en <= 1'b0;
+  else if (f0_fifo_write_en)
+  	fifo_write_en <= 1'b1;
+  else if (all_done && !fifo_almost_full)
+    fifo_write_en <= 1'b1;
+  else 
+  	fifo_write_en <= 1'b0;
+end
+
+
+always@(posedge sys_clk or negedge sys_rst_n)
+begin
+  if(!sys_rst_n)
+  	fifo_read_vld <= 1'b1;
+  else if ((num_read == MAX_DATA_NUM - 1) && fifo_read_en)
+  	fifo_read_vld <= 1'b0;
+  else if (pcie_read_done_ack)
+  	fifo_read_vld <= 1'b1;
+end
+
+
+
+assign fifo_read_en = fifo_read_vld && (!empty);
+
+
+always@(posedge sys_clk or negedge sys_rst_n)
+begin
+  if(!sys_rst_n)
+  	num_read <= 15'b0;
+  else if ((num_read == MAX_DATA_NUM - 1) && fifo_read_en)
+  	num_read <= 15'b0;
+  else if (fifo_read_en)
+  	num_read <=num_read + 15'b1;
+ end
+
+always@(posedge sys_clk or negedge sys_rst_n)
+begin
+  if(!sys_rst_n)
+  	temp_en_write_pcie <= 1'b0;
+  else if (fifo_read_en)
+  	temp_en_write_pcie <= 1'b1;
+  else 
+  	temp_en_write_pcie <= 1'b0;
+end
+
+
+
+always@(posedge sys_clk or negedge sys_rst_n)
+begin
+  if(!sys_rst_n)
+  	temp_addr_write_pcie <= 15'b0;
+  else if ((temp_addr_write_pcie == MAX_DATA_NUM - 1) && temp_en_write_pcie)
+  	temp_addr_write_pcie <= 15'b0;
+  else if (temp_en_write_pcie)
+  	temp_addr_write_pcie <= temp_addr_write_pcie + 15'b1;
+end
+
+always@(posedge sys_clk or negedge sys_rst_n)
+begin
+  if(!sys_rst_n)
+  	max_data_num_done <= 1'b0;
+  else if ((temp_addr_write_pcie == MAX_DATA_NUM - 1) && temp_en_write_pcie)
+  	max_data_num_done <= 1'b1;
+  else 
+  	max_data_num_done <= 1'b0;
+end
+
+
+
+assign pcie_read_en    = max_data_num_done;
+assign data_write_pcie = fifo_data_out;
+assign addr_write_pcie = temp_addr_write_pcie;
+assign en_write_pcie   = temp_en_write_pcie;
+
+
+
+//-----------------------------------------------------------------------------------
+
+calculate_channel u0(
+
+   .sys_clk               (sys_clk             ),
+   .sys_rst_n             (sys_rst_n           ),
+	.matrix_memory_sop     (pkt0_sop            ),
+	.matrix_memory_eop     (pkt0_eop            ),
+	.matrix_memory_vld     (pkt0_vld            ),
+	.matrix_memory_data    (pkt0_dat            ), 
+   .pkt_enable            (pkt0_receive_enable ), 
+   .channel_fifo_rden     (result0_fifo_rden   ),  
+   .channel_fifo_rdat     (result0_fifo_rdat   ),  
+   .channel_fifo_empty    (result0_fifo_empty  )
+);
+
+
+//===============================================================
+
+(*noprune*) reg [31:0]  sop_cont;
+(*noprune*) reg [31:0]  fifo_in_cont;
+(*noprune*) reg [31:0]  fifo_out_cont;
+
+always @(posedge sys_clk or negedge sys_rst_n) 
+begin
+	if (!sys_rst_n) begin
+      sop_cont <=#D 32'd0;
+	end else if (matrix_memory_sop) begin
+      sop_cont <=#D sop_cont + 1;
+	end 
+end 
+
+
+always @(posedge sys_clk or negedge sys_rst_n) 
+begin
+	if (!sys_rst_n) begin
+      fifo_in_cont <=#D 32'd0;
+	end else if (fifo_write_en) begin
+      fifo_in_cont <=#D fifo_in_cont + 1;
+	end 
+end
+
+always @(posedge sys_clk or negedge sys_rst_n) 
+begin
+	if (!sys_rst_n) begin
+      fifo_out_cont <=#D 32'd0;
+	end else if (fifo_read_en) begin
+      fifo_out_cont <=#D fifo_out_cont + 1;
+	end 
+end
+
+
+endmodule 
+
+

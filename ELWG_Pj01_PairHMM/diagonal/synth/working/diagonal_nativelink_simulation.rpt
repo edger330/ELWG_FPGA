@@ -1,0 +1,22 @@
+Info: Start Nativelink Simulation process
+executing command line: ip-make-simscript --nativelink-mode --output-directory=diagonal_iputf_input --spd=C:/Users/edger/Desktop/diagonal/synth/ip_core/ram_9600x128/ram_9600x128/ram_9600x128.spd --spd=C:/Users/edger/Desktop/diagonal/synth/ip_core/fifo_512x128/fifo_512x128/fifo_512x128.spd --spd=C:/Users/edger/Desktop/diagonal/synth/working/diagonal/diagonal.spd --spd=C:/Users/edger/Desktop/diagonal/synth/ip_core/fp_sub/fp_sub/fp_sub.spd --spd=C:/Users/edger/Desktop/diagonal/synth/ip_core/rom_256x32/rom_256x32/rom_256x32.spd --spd=C:/Users/edger/Desktop/diagonal/synth/ip_core/ram_2port_512x32/ram_2port_512x32/ram_2port_512x32.spd --spd=C:/Users/edger/Desktop/diagonal/synth/ip_core/Rom_Check0/Rom_Check0/Rom_Check0.spd --spd=C:/Users/edger/Desktop/diagonal/synth/ip_core/Rom_Check1/Rom_Check1/Rom_Check1.spd --spd=C:/Users/edger/Desktop/diagonal/synth/ip_core/Rom_Check2/Rom_Check2/Rom_Check2.spd --spd=C:/Users/edger/Desktop/diagonal/synth/ip_core/fp_mult/fp_mult/fp_mult.spd --spd=C:/Users/edger/Desktop/diagonal/synth/ip_core/fp_add/fp_add/fp_add.spd --spd=C:/Users/edger/Desktop/diagonal/synth/ip_core/fifo_X/fifo_X/fifo_X.spd --spd=C:/Users/edger/Desktop/diagonal/synth/ip_core/fifo_M/fifo_M/fifo_M.spd 
+
+========= EDA Simulation Settings =====================
+
+Sim Mode              :  RTL
+Family                :  arria10
+Quartus root          :  e:/intelfpga/16.1/quartus/bin64/
+Quartus sim root      :  e:/intelfpga/16.1/quartus/eda/sim_lib
+Simulation Tool       :  modelsim-altera
+Simulation Language   :  verilog
+Simulation Mode       :  GUI
+Sim Output File       :  
+Sim SDF file          :  
+Sim dir               :  simulation\modelsim
+
+=======================================================
+
+Info: Starting NativeLink simulation with ModelSim-Altera software
+Sourced NativeLink script e:/intelfpga/16.1/quartus/common/tcl/internal/nativelink/modelsim.tcl
+Warning: File diagonal_run_msim_rtl_verilog.do already exists - backing up current file as diagonal_run_msim_rtl_verilog.do.bak11
+Info: Spawning ModelSim-Altera Simulation software 

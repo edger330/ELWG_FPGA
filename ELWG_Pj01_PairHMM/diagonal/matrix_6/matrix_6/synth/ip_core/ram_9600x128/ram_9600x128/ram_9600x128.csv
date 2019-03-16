@@ -1,0 +1,18 @@
+# system info ram_9600x128 on 2018.01.24.17:26:06
+system_info:
+name,value
+DEVICE,10AX115S2F45I2SG
+DEVICE_FAMILY,Arria 10
+GENERATION_ID,1516785966
+#
+#
+# Files generated for ram_9600x128 on 2018.01.24.17:26:06
+files:
+filepath,kind,attributes,module,is_top
+sim/ram_9600x128.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,ram_9600x128,true
+ram_2port_161/sim/ram_9600x128_ram_2port_161_6d7ia5i.v,VERILOG,,ram_9600x128_ram_2port_161_6d7ia5i,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+ram_9600x128.ram_2port_0,ram_9600x128_ram_2port_161_6d7ia5i

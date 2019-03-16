@@ -1,0 +1,96 @@
+Info: Starting: Create simulation model
+Info: qsys-generate /home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/fifo_512x128/fifo_512x128.qsys --simulation=VERILOG --allow-mixed-language-simulation --output-directory=/home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/fifo_512x128/fifo_512x128 --family="Arria 10" --part=10AX115S2F45I1SG
+Progress: Loading fifo_512x128/fifo_512x128.qsys
+Progress: Reading input file
+Progress: Adding fifo_0 [fifo 16.1]
+Progress: Parameterizing module fifo_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+: fifo_512x128.fifo_0: Targeting device family: Arria 10.
+: fifo_512x128.fifo_0: Tab: 'SCFIFO Options' is unavailable while using Dual-Clock FIFO.
+: fifo_512x128.fifo_0: 'Output register option' is unavailable while using Dual-Clock FIFO.
+: fifo_512x128.fifo_0: SDC file will be generated to apply correct constraints. User may experience increase in fitter compilation time
+: fifo_512x128.fifo_0: Embedded set_false_path assignment is disabled.
+Info: fifo_512x128: "Transforming system: fifo_512x128"
+Info: fifo_512x128: Running transform generation_view_transform
+Info: fifo_512x128: Running transform generation_view_transform took 0.000s
+Info: fifo_0: Running transform generation_view_transform
+Info: fifo_0: Running transform generation_view_transform took 0.000s
+Info: fifo_512x128: Running transform merlin_avalon_transform
+Info: fifo_512x128: Running transform merlin_avalon_transform took 0.049s
+Info: fifo_512x128: "Naming system components in system: fifo_512x128"
+Info: fifo_512x128: "Processing generation queue"
+Info: fifo_512x128: "Generating: fifo_512x128"
+Info: fifo_512x128: "Generating: fifo_512x128_fifo_161_2vzxxdi"
+Info: fifo_512x128: Done "fifo_512x128" with 2 modules, 3 files
+Info: qsys-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=/home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/fifo_512x128/fifo_512x128/fifo_512x128.spd --output-directory=/home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/fifo_512x128/fifo_512x128/sim/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=/home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/fifo_512x128/fifo_512x128/fifo_512x128.spd --output-directory=/home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/fifo_512x128/fifo_512x128/sim/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in /home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/fifo_512x128/fifo_512x128/sim/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Generating the following file(s) for VCS simulator in /home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/fifo_512x128/fifo_512x128/sim/ directory:
+Info: 	synopsys/vcs/vcs_setup.sh
+Info: Generating the following file(s) for VCSMX simulator in /home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/fifo_512x128/fifo_512x128/sim/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in /home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/fifo_512x128/fifo_512x128/sim/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	1 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in /home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/fifo_512x128/fifo_512x128/sim/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under /home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/fifo_512x128/fifo_512x128/sim/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/fifo_512x128/fifo_512x128.qsys --block-symbol-file --output-directory=/home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/fifo_512x128/fifo_512x128 --family="Arria 10" --part=10AX115S2F45I1SG
+Progress: Loading fifo_512x128/fifo_512x128.qsys
+Progress: Reading input file
+Progress: Adding fifo_0 [fifo 16.1]
+Progress: Parameterizing module fifo_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+: fifo_512x128.fifo_0: Targeting device family: Arria 10.
+: fifo_512x128.fifo_0: Tab: 'SCFIFO Options' is unavailable while using Dual-Clock FIFO.
+: fifo_512x128.fifo_0: 'Output register option' is unavailable while using Dual-Clock FIFO.
+: fifo_512x128.fifo_0: SDC file will be generated to apply correct constraints. User may experience increase in fitter compilation time
+: fifo_512x128.fifo_0: Embedded set_false_path assignment is disabled.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/fifo_512x128/fifo_512x128.qsys --synthesis=VERILOG --output-directory=/home/gpu_server4/Desktop/2_2/pcie_demo_v2_0/data_pkt/synth/ip_core/fifo_512x128/fifo_512x128 --family="Arria 10" --part=10AX115S2F45I1SG
+Progress: Loading fifo_512x128/fifo_512x128.qsys
+Progress: Reading input file
+Progress: Adding fifo_0 [fifo 16.1]
+Progress: Parameterizing module fifo_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+: fifo_512x128.fifo_0: Targeting device family: Arria 10.
+: fifo_512x128.fifo_0: Tab: 'SCFIFO Options' is unavailable while using Dual-Clock FIFO.
+: fifo_512x128.fifo_0: 'Output register option' is unavailable while using Dual-Clock FIFO.
+: fifo_512x128.fifo_0: SDC file will be generated to apply correct constraints. User may experience increase in fitter compilation time
+: fifo_512x128.fifo_0: Embedded set_false_path assignment is disabled.
+Info: fifo_512x128: "Transforming system: fifo_512x128"
+Info: fifo_512x128: Running transform generation_view_transform
+Info: fifo_512x128: Running transform generation_view_transform took 0.000s
+Info: fifo_0: Running transform generation_view_transform
+Info: fifo_0: Running transform generation_view_transform took 0.000s
+Info: fifo_512x128: Running transform merlin_avalon_transform
+Info: fifo_512x128: Running transform merlin_avalon_transform took 0.008s
+Info: fifo_512x128: "Naming system components in system: fifo_512x128"
+Info: fifo_512x128: "Processing generation queue"
+Info: fifo_512x128: "Generating: fifo_512x128"
+Info: fifo_512x128: "Generating: fifo_512x128_fifo_161_2vzxxdi"
+Info: fifo_512x128: Done "fifo_512x128" with 2 modules, 4 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

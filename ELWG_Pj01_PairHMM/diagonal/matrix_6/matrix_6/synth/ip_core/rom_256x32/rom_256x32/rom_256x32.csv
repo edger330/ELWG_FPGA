@@ -1,0 +1,18 @@
+# system info rom_256x32 on 2017.12.02.10:57:34
+system_info:
+name,value
+DEVICE,10AX115S2F45I2SG
+DEVICE_FAMILY,Arria 10
+GENERATION_ID,1512183453
+#
+#
+# Files generated for rom_256x32 on 2017.12.02.10:57:34
+files:
+filepath,kind,attributes,module,is_top
+sim/rom_256x32.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,rom_256x32,true
+rom_1port_161/sim/rom_256x32_rom_1port_161_2qxtcda.v,VERILOG,,rom_256x32_rom_1port_161_2qxtcda,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+rom_256x32.rom_1port_0,rom_256x32_rom_1port_161_2qxtcda

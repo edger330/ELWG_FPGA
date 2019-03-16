@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="rom_1port_161/sim/rom_256x32_rom_1port_161_n3fz64y.v"
+   type="VERILOG"
+   library="rom_256x32_rom_1port_161" />
+ <file path="sim/rom_256x32.v" type="VERILOG" hasInlineConfiguration="true" />
+ <topLevel name="rom_256x32" />
+ <deviceFamily name="arria10" />
+</simPackage>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="channel_adapter_161/sim/ddr4_core_channel_adapter_161_xd7xncy.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_channel_adapter_161" />
+ <file
+   path="channel_adapter_161/sim/ddr4_core_channel_adapter_161_fcviibi.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_channel_adapter_161" />
+ <file
+   path="altera_avalon_packets_to_master_161/sim/altera_avalon_packets_to_master.v"
+   type="VERILOG"
+   library="ddr4_core_altera_avalon_packets_to_master_161" />
+ <file
+   path="altera_avalon_st_packets_to_bytes_161/sim/altera_avalon_st_packets_to_bytes.v"
+   type="VERILOG"
+   library="ddr4_core_altera_avalon_st_packets_to_bytes_161" />
+ <file
+   path="altera_avalon_st_bytes_to_packets_161/sim/altera_avalon_st_bytes_to_packets.v"
+   type="VERILOG"
+   library="ddr4_core_altera_avalon_st_bytes_to_packets_161" />
+ <file
+   path="altera_avalon_sc_fifo_161/sim/altera_avalon_sc_fifo.v"
+   type="VERILOG"
+   library="ddr4_core_altera_avalon_sc_fifo_161" />
+ <file
+   path="timing_adapter_161/sim/ddr4_core_timing_adapter_161_u532i6q.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_timing_adapter_161" />
+ <file
+   path="altera_jtag_dc_streaming_161/sim/altera_avalon_st_jtag_interface.v"
+   type="VERILOG"
+   library="ddr4_core_altera_jtag_dc_streaming_161" />
+ <file
+   path="altera_jtag_dc_streaming_161/sim/altera_jtag_dc_streaming.v"
+   type="VERILOG"
+   library="ddr4_core_altera_jtag_dc_streaming_161" />
+ <file
+   path="altera_jtag_dc_streaming_161/sim/altera_jtag_sld_node.v"
+   type="VERILOG"
+   library="ddr4_core_altera_jtag_dc_streaming_161" />
+ <file
+   path="altera_jtag_dc_streaming_161/sim/altera_jtag_streaming.v"
+   type="VERILOG"
+   library="ddr4_core_altera_jtag_dc_streaming_161" />
+ <file
+   path="altera_jtag_dc_streaming_161/sim/altera_avalon_st_clock_crosser.v"
+   type="VERILOG"
+   library="ddr4_core_altera_jtag_dc_streaming_161" />
+ <file
+   path="altera_jtag_dc_streaming_161/sim/altera_std_synchronizer_nocut.v"
+   type="VERILOG"
+   library="ddr4_core_altera_jtag_dc_streaming_161" />
+ <file
+   path="altera_jtag_dc_streaming_161/sim/altera_avalon_st_pipeline_base.v"
+   type="VERILOG"
+   library="ddr4_core_altera_jtag_dc_streaming_161" />
+ <file
+   path="altera_jtag_dc_streaming_161/sim/altera_avalon_st_idle_remover.v"
+   type="VERILOG"
+   library="ddr4_core_altera_jtag_dc_streaming_161" />
+ <file
+   path="altera_jtag_dc_streaming_161/sim/altera_avalon_st_idle_inserter.v"
+   type="VERILOG"
+   library="ddr4_core_altera_jtag_dc_streaming_161" />
+ <file
+   path="altera_jtag_dc_streaming_161/sim/altera_avalon_st_pipeline_stage.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_jtag_dc_streaming_161" />
+ <file
+   path="altera_jtag_dc_streaming_161/sim/altera_avalon_st_jtag_interface.sdc"
+   type="SDC"
+   library="ddr4_core_altera_jtag_dc_streaming_161" />
+ <file
+   path="altera_merlin_slave_translator_161/sim/altera_merlin_slave_translator.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_merlin_slave_translator_161" />
+ <file
+   path="altera_merlin_master_translator_161/sim/altera_merlin_master_translator.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_merlin_master_translator_161" />
+ <file
+   path="altera_reset_controller_161/sim/altera_reset_controller.v"
+   type="VERILOG"
+   library="ddr4_core_altera_reset_controller_161" />
+ <file
+   path="altera_reset_controller_161/sim/altera_reset_synchronizer.v"
+   type="VERILOG"
+   library="ddr4_core_altera_reset_controller_161" />
+ <file
+   path="altera_reset_controller_161/sim/altera_reset_controller.sdc"
+   type="SDC"
+   library="ddr4_core_altera_reset_controller_161" />
+ <file
+   path="altera_mm_interconnect_161/sim/ddr4_core_altera_mm_interconnect_161_rjywn6y.v"
+   type="VERILOG"
+   library="ddr4_core_altera_mm_interconnect_161"
+   hasInlineConfiguration="true" />
+ <file
+   path="altera_avalon_onchip_memory2_161/sim/ddr4_core_altera_avalon_onchip_memory2_161_ouhlr2a.v"
+   type="VERILOG"
+   library="ddr4_core_altera_avalon_onchip_memory2_161" />
+ <file
+   path="altera_avalon_onchip_memory2_161/sim/seq_cal_soft_m20k.hex"
+   type="HEX"
+   library="ddr4_core_altera_avalon_onchip_memory2_161" />
+ <file
+   path="altera_mm_interconnect_161/sim/ddr4_core_altera_mm_interconnect_161_x5yuuaa.v"
+   type="VERILOG"
+   library="ddr4_core_altera_mm_interconnect_161"
+   hasInlineConfiguration="true" />
+ <file
+   path="alt_mem_if_jtag_master_161/sim/ddr4_core_alt_mem_if_jtag_master_161_s34bviy.v"
+   type="VERILOG"
+   library="ddr4_core_alt_mem_if_jtag_master_161"
+   hasInlineConfiguration="true" />
+ <file
+   path="altera_avalon_mm_bridge_161/sim/altera_avalon_mm_bridge.v"
+   type="VERILOG"
+   library="ddr4_core_altera_avalon_mm_bridge_161" />
+ <file
+   path="altera_mm_interconnect_161/sim/ddr4_core_altera_mm_interconnect_161_wl6t3li.v"
+   type="VERILOG"
+   library="ddr4_core_altera_mm_interconnect_161"
+   hasInlineConfiguration="true" />
+ <file
+   path="altera_emif_cal_slave_nf_161/sim/ddr4_core_altera_emif_cal_slave_nf_161_m6azz7i.v"
+   type="VERILOG"
+   library="ddr4_core_altera_emif_cal_slave_nf_161"
+   hasInlineConfiguration="true" />
+ <file
+   path="altera_ip_col_if_161/sim/ddr4_core_altera_ip_col_if_161_foc7v3q.v"
+   type="VERILOG"
+   library="ddr4_core_altera_ip_col_if_161"
+   hasInlineConfiguration="true" />
+ <file
+   path="altera_emif_arch_nf_161/sim/ddr4_core_altera_emif_arch_nf_161_bgkg3xi_top.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/ddr4_core_altera_emif_arch_nf_161_bgkg3xi_io_aux.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/ddr4_core_altera_emif_arch_nf_161_bgkg3xi.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/altera_emif_arch_nf_bufs.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/altera_emif_arch_nf_buf_udir_se_i.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/altera_emif_arch_nf_buf_udir_se_o.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/altera_emif_arch_nf_buf_udir_df_i.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/altera_emif_arch_nf_buf_udir_df_o.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/altera_emif_arch_nf_buf_udir_cp_i.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/altera_emif_arch_nf_buf_bdir_df.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/altera_emif_arch_nf_buf_bdir_se.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/altera_emif_arch_nf_buf_unused.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/altera_emif_arch_nf_pll.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/altera_emif_arch_nf_pll_fast_sim.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/altera_emif_arch_nf_pll_extra_clks.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/altera_emif_arch_nf_oct.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/altera_emif_arch_nf_core_clks_rsts.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/altera_emif_arch_nf_hps_clks_rsts.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/altera_emif_arch_nf_io_tiles_wrap.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/altera_emif_arch_nf_io_tiles.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/altera_emif_arch_nf_io_tiles_abphy.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/altera_emif_arch_nf_abphy_mux.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/altera_emif_arch_nf_hmc_avl_if.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/altera_emif_arch_nf_hmc_sideband_if.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/altera_emif_arch_nf_hmc_mmr_if.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/altera_emif_arch_nf_hmc_amm_data_if.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/altera_emif_arch_nf_hmc_ast_data_if.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/altera_emif_arch_nf_afi_if.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/altera_emif_arch_nf_seq_if.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/altera_emif_arch_nf_regs.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/altera_oct.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/altera_oct_um_fsm.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/mem_array_abphy.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/twentynm_io_12_lane_abphy.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/twentynm_io_12_lane_encrypted_abphy.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/twentynm_io_12_lane_nf5es_encrypted_abphy.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/io_12_lane_bcm__nf5es_abphy.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/io_12_lane__nf5es_abphy.sv"
+   type="SYSTEM_VERILOG"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/ddr4_core_altera_emif_arch_nf_161_bgkg3xi_seq_params_sim.hex"
+   type="HEX"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/ddr4_core_altera_emif_arch_nf_161_bgkg3xi_seq_params_sim.txt"
+   type="OTHER"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/ddr4_core_altera_emif_arch_nf_161_bgkg3xi_seq_params_synth.hex"
+   type="HEX"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/ddr4_core_altera_emif_arch_nf_161_bgkg3xi_seq_params_synth.txt"
+   type="OTHER"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/ddr4_core_altera_emif_arch_nf_161_bgkg3xi_seq_cal.hex"
+   type="HEX"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_arch_nf_161/sim/ddr4_core_altera_emif_arch_nf_161_bgkg3xi_readme.txt"
+   type="OTHER"
+   library="ddr4_core_altera_emif_arch_nf_161" />
+ <file
+   path="altera_emif_161/sim/ddr4_core_altera_emif_161_lsd7o4q.v"
+   type="VERILOG"
+   library="ddr4_core_altera_emif_161"
+   hasInlineConfiguration="true" />
+ <file path="sim/ddr4_core.v" type="VERILOG" hasInlineConfiguration="true" />
+ <topLevel name="ddr4_core" />
+ <deviceFamily name="arria10" />
+ <modelMap
+   controllerPath="ddr4_core.emif_0.cal_slave_component.ioaux_soft_ram"
+   modelPath="ddr4_core.emif_0.cal_slave_component.ioaux_soft_ram" />
+</simPackage>

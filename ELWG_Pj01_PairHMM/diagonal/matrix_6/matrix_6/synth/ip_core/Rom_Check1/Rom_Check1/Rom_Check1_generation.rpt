@@ -1,0 +1,87 @@
+Info: Starting: Create simulation model
+Info: qsys-generate E:\STUDY\quartus_examples\matrix_6\synth\ip_core\Rom_Check1\Rom_Check1.qsys --simulation=VERILOG --allow-mixed-language-simulation --output-directory=E:\STUDY\quartus_examples\matrix_6\synth\ip_core\Rom_Check1\Rom_Check1 --family="Arria 10" --part=10AX115S2F45I2SG
+Progress: Loading Rom_Check1/Rom_Check1.qsys
+Progress: Reading input file
+Progress: Adding rom_1port_0 [rom_1port 16.1]
+Progress: Parameterizing module rom_1port_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+: Rom_Check1.rom_1port_0: Targeting device family: Arria 10.
+: Rom_Check1.rom_1port_0: The initial content file can only conforms to PORT_A's dimensions for ROM:1-PORT.
+Info: Rom_Check1: "Transforming system: Rom_Check1"
+Info: Rom_Check1: Running transform generation_view_transform
+Info: Rom_Check1: Running transform generation_view_transform took 0.000s
+Info: rom_1port_0: Running transform generation_view_transform
+Info: rom_1port_0: Running transform generation_view_transform took 0.000s
+Info: Rom_Check1: Running transform merlin_avalon_transform
+Info: Rom_Check1: Running transform merlin_avalon_transform took 0.045s
+Info: Rom_Check1: "Naming system components in system: Rom_Check1"
+Info: Rom_Check1: "Processing generation queue"
+Info: Rom_Check1: "Generating: Rom_Check1"
+Info: Rom_Check1: "Generating: Rom_Check1_rom_1port_161_rt54boq"
+Info: Rom_Check1: Done "Rom_Check1" with 2 modules, 2 files
+Info: qsys-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=E:\STUDY\quartus_examples\matrix_6\synth\ip_core\Rom_Check1\Rom_Check1\Rom_Check1.spd --output-directory=E:/STUDY/quartus_examples/matrix_6/synth/ip_core/Rom_Check1/Rom_Check1/sim/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=E:\STUDY\quartus_examples\matrix_6\synth\ip_core\Rom_Check1\Rom_Check1\Rom_Check1.spd --output-directory=E:/STUDY/quartus_examples/matrix_6/synth/ip_core/Rom_Check1/Rom_Check1/sim/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in E:/STUDY/quartus_examples/matrix_6/synth/ip_core/Rom_Check1/Rom_Check1/sim/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Generating the following file(s) for VCS simulator in E:/STUDY/quartus_examples/matrix_6/synth/ip_core/Rom_Check1/Rom_Check1/sim/ directory:
+Info: 	synopsys/vcs/vcs_setup.sh
+Info: Generating the following file(s) for VCSMX simulator in E:/STUDY/quartus_examples/matrix_6/synth/ip_core/Rom_Check1/Rom_Check1/sim/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in E:/STUDY/quartus_examples/matrix_6/synth/ip_core/Rom_Check1/Rom_Check1/sim/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	1 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in E:/STUDY/quartus_examples/matrix_6/synth/ip_core/Rom_Check1/Rom_Check1/sim/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under E:/STUDY/quartus_examples/matrix_6/synth/ip_core/Rom_Check1/Rom_Check1/sim/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate E:\STUDY\quartus_examples\matrix_6\synth\ip_core\Rom_Check1\Rom_Check1.qsys --block-symbol-file --output-directory=E:\STUDY\quartus_examples\matrix_6\synth\ip_core\Rom_Check1\Rom_Check1 --family="Arria 10" --part=10AX115S2F45I2SG
+Progress: Loading Rom_Check1/Rom_Check1.qsys
+Progress: Reading input file
+Progress: Adding rom_1port_0 [rom_1port 16.1]
+Progress: Parameterizing module rom_1port_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+: Rom_Check1.rom_1port_0: Targeting device family: Arria 10.
+: Rom_Check1.rom_1port_0: The initial content file can only conforms to PORT_A's dimensions for ROM:1-PORT.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate E:\STUDY\quartus_examples\matrix_6\synth\ip_core\Rom_Check1\Rom_Check1.qsys --synthesis=VERILOG --output-directory=E:\STUDY\quartus_examples\matrix_6\synth\ip_core\Rom_Check1\Rom_Check1 --family="Arria 10" --part=10AX115S2F45I2SG
+Progress: Loading Rom_Check1/Rom_Check1.qsys
+Progress: Reading input file
+Progress: Adding rom_1port_0 [rom_1port 16.1]
+Progress: Parameterizing module rom_1port_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+: Rom_Check1.rom_1port_0: Targeting device family: Arria 10.
+: Rom_Check1.rom_1port_0: The initial content file can only conforms to PORT_A's dimensions for ROM:1-PORT.
+Info: Rom_Check1: "Transforming system: Rom_Check1"
+Info: Rom_Check1: Running transform generation_view_transform
+Info: Rom_Check1: Running transform generation_view_transform took 0.000s
+Info: rom_1port_0: Running transform generation_view_transform
+Info: rom_1port_0: Running transform generation_view_transform took 0.000s
+Info: Rom_Check1: Running transform merlin_avalon_transform
+Info: Rom_Check1: Running transform merlin_avalon_transform took 0.008s
+Info: Rom_Check1: "Naming system components in system: Rom_Check1"
+Info: Rom_Check1: "Processing generation queue"
+Info: Rom_Check1: "Generating: Rom_Check1"
+Info: Rom_Check1: "Generating: Rom_Check1_rom_1port_161_rt54boq"
+Info: Rom_Check1: Done "Rom_Check1" with 2 modules, 3 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

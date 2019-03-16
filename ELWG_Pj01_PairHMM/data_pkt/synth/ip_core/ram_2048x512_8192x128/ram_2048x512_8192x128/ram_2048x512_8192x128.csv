@@ -1,0 +1,18 @@
+# system info ram_2048x512_8192x128 on 2017.10.21.21:33:42
+system_info:
+name,value
+DEVICE,10AX115S2F45I1SG
+DEVICE_FAMILY,Arria 10
+GENERATION_ID,1508592822
+#
+#
+# Files generated for ram_2048x512_8192x128 on 2017.10.21.21:33:42
+files:
+filepath,kind,attributes,module,is_top
+sim/ram_2048x512_8192x128.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,ram_2048x512_8192x128,true
+ram_2port_161/sim/ram_2048x512_8192x128_ram_2port_161_himwlxy.v,VERILOG,,ram_2048x512_8192x128_ram_2port_161_himwlxy,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+ram_2048x512_8192x128.ram_2port_0,ram_2048x512_8192x128_ram_2port_161_himwlxy

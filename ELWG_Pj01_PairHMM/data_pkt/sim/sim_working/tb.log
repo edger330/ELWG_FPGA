@@ -1,0 +1,270 @@
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE vlog 10.1b Compiler 2012.04 Apr 26 2012
+# -- Compiling module ram_2_port_32x8_32_ram_2port_161_nja676i
+# 
+# Top level modules:
+# 	ram_2_port_32x8_32_ram_2port_161_nja676i
+# Model Technology ModelSim SE vlog 10.1b Compiler 2012.04 Apr 26 2012
+# -- Compiling module ram_2_port_32x8_32
+# 
+# Top level modules:
+# 	ram_2_port_32x8_32
+# Model Technology ModelSim SE vlog 10.1b Compiler 2012.04 Apr 26 2012
+# -- Compiling module ram_2_port_9600x128_8_ram_2port_161_f6rnjka
+# 
+# Top level modules:
+# 	ram_2_port_9600x128_8_ram_2port_161_f6rnjka
+# Model Technology ModelSim SE vlog 10.1b Compiler 2012.04 Apr 26 2012
+# -- Compiling module ram_2_port_9600x128_8
+# 
+# Top level modules:
+# 	ram_2_port_9600x128_8
+# Model Technology ModelSim SE vlog 10.1b Compiler 2012.04 Apr 26 2012
+# -- Compiling module ram_2_port_102400x8_ram_2port_161_lizdoxy
+# 
+# Top level modules:
+# 	ram_2_port_102400x8_ram_2port_161_lizdoxy
+# Model Technology ModelSim SE vlog 10.1b Compiler 2012.04 Apr 26 2012
+# -- Compiling module ram_2_port_102400x8
+# 
+# Top level modules:
+# 	ram_2_port_102400x8
+# Model Technology ModelSim SE vlog 10.1b Compiler 2012.04 Apr 26 2012
+# -- Compiling module ram_2_port_8192x8_ram_2port_161_n5r7w6y
+# 
+# Top level modules:
+# 	ram_2_port_8192x8_ram_2port_161_n5r7w6y
+# Model Technology ModelSim SE vlog 10.1b Compiler 2012.04 Apr 26 2012
+# -- Compiling module ram_2_port_8192x8
+# 
+# Top level modules:
+# 	ram_2_port_8192x8
+# Model Technology ModelSim SE vlog 10.1b Compiler 2012.04 Apr 26 2012
+# -- Compiling module rom_512x32_rom_1port_161_74ld5ui
+# 
+# Top level modules:
+# 	rom_512x32_rom_1port_161_74ld5ui
+# Model Technology ModelSim SE vlog 10.1b Compiler 2012.04 Apr 26 2012
+# -- Compiling module rom_512x32
+# 
+# Top level modules:
+# 	rom_512x32
+# Model Technology ModelSim SE vlog 10.1b Compiler 2012.04 Apr 26 2012
+# -- Compiling module rom_128x16_rom_1port_161_vksrila
+# 
+# Top level modules:
+# 	rom_128x16_rom_1port_161_vksrila
+# Model Technology ModelSim SE vlog 10.1b Compiler 2012.04 Apr 26 2012
+# -- Compiling module rom_128x16
+# 
+# Top level modules:
+# 	rom_128x16
+# Model Technology ModelSim SE vlog 10.1b Compiler 2012.04 Apr 26 2012
+# -- Compiling module ram_2_port_8192x32_ram_2port_161_5d6pisa
+# 
+# Top level modules:
+# 	ram_2_port_8192x32_ram_2port_161_5d6pisa
+# Model Technology ModelSim SE vlog 10.1b Compiler 2012.04 Apr 26 2012
+# -- Compiling module ram_2_port_8192x32
+# 
+# Top level modules:
+# 	ram_2_port_8192x32
+# Model Technology ModelSim SE vlog 10.1b Compiler 2012.04 Apr 26 2012
+# -- Compiling module rom_16384x32_rom_1port_161_n3lea5i
+# 
+# Top level modules:
+# 	rom_16384x32_rom_1port_161_n3lea5i
+# Model Technology ModelSim SE vlog 10.1b Compiler 2012.04 Apr 26 2012
+# -- Compiling module rom_16384x32
+# 
+# Top level modules:
+# 	rom_16384x32
+# Model Technology ModelSim SE vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package dspba_library_package
+# Model Technology ModelSim SE vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package dspba_library_package
+# -- Compiling entity dspba_delay
+# -- Compiling architecture delay of dspba_delay
+# -- Loading package NUMERIC_STD
+# -- Compiling entity dspba_sync_reg
+# -- Compiling architecture sync_reg of dspba_sync_reg
+# Model Technology ModelSim SE vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package dspba_library_package
+# -- Loading package altera_mf_components
+# -- Loading package altera_lnsim_components
+# -- Loading package LPM_COMPONENTS
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package twentynm_atom_pack
+# -- Loading package twentynm_components
+# -- Compiling entity fp_mul_32_altera_fp_functions_161_buvpzaq
+# -- Compiling architecture normal of fp_mul_32_altera_fp_functions_161_buvpzaq
+# Model Technology ModelSim SE vlog 10.1b Compiler 2012.04 Apr 26 2012
+# -- Compiling module fp_mul_32
+# 
+# Top level modules:
+# 	fp_mul_32
+# Model Technology ModelSim SE vlog 10.1b Compiler 2012.04 Apr 26 2012
+# -- Compiling module fifo_1024x32_fifo_161_2hu64yq
+# 
+# Top level modules:
+# 	fifo_1024x32_fifo_161_2hu64yq
+# Model Technology ModelSim SE vlog 10.1b Compiler 2012.04 Apr 26 2012
+# -- Compiling module fifo_1024x32
+# 
+# Top level modules:
+# 	fifo_1024x32
+# Model Technology ModelSim SE vlog 10.1b Compiler 2012.04 Apr 26 2012
+# -- Compiling module rom_y_initial_rom_1port_161_dumqmsi
+# 
+# Top level modules:
+# 	rom_y_initial_rom_1port_161_dumqmsi
+# Model Technology ModelSim SE vlog 10.1b Compiler 2012.04 Apr 26 2012
+# -- Compiling module rom_y_initial
+# 
+# Top level modules:
+# 	rom_y_initial
+# Model Technology ModelSim SE vlog 10.1b Compiler 2012.04 Apr 26 2012
+# -- Compiling module ram_2_port_1024_32_ram_2port_161_r5t2nhi
+# 
+# Top level modules:
+# 	ram_2_port_1024_32_ram_2port_161_r5t2nhi
+# Model Technology ModelSim SE vlog 10.1b Compiler 2012.04 Apr 26 2012
+# -- Compiling module ram_2_port_1024_32
+# 
+# Top level modules:
+# 	ram_2_port_1024_32
+# Model Technology ModelSim SE vlog 10.1b Compiler 2012.04 Apr 26 2012
+# -- Compiling module fifo_36x36_fifo_161_utjunky
+# 
+# Top level modules:
+# 	fifo_36x36_fifo_161_utjunky
+# Model Technology ModelSim SE vlog 10.1b Compiler 2012.04 Apr 26 2012
+# -- Compiling module fifo_36x36
+# 
+# Top level modules:
+# 	fifo_36x36
+# Model Technology ModelSim SE vlog 10.1b Compiler 2012.04 Apr 26 2012
+# -- Compiling module ram_2_wrport_1024x32_ram_2port_161_n7zuzsy
+# 
+# Top level modules:
+# 	ram_2_wrport_1024x32_ram_2port_161_n7zuzsy
+# Model Technology ModelSim SE vlog 10.1b Compiler 2012.04 Apr 26 2012
+# -- Compiling module ram_2_wrport_1024x32
+# 
+# Top level modules:
+# 	ram_2_wrport_1024x32
+# Model Technology ModelSim SE vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package dspba_library_package
+# Model Technology ModelSim SE vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package dspba_library_package
+# -- Compiling entity dspba_delay
+# -- Compiling architecture delay of dspba_delay
+# -- Loading package NUMERIC_STD
+# -- Compiling entity dspba_sync_reg
+# -- Compiling architecture sync_reg of dspba_sync_reg
+# Model Technology ModelSim SE vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package dspba_library_package
+# -- Loading package altera_mf_components
+# -- Loading package altera_lnsim_components
+# -- Loading package LPM_COMPONENTS
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package twentynm_atom_pack
+# -- Loading package twentynm_components
+# -- Compiling entity fp_add_altera_fp_functions_161_3dmqbua
+# -- Compiling architecture normal of fp_add_altera_fp_functions_161_3dmqbua
+# Model Technology ModelSim SE vlog 10.1b Compiler 2012.04 Apr 26 2012
+# -- Compiling module fp_add
+# 
+# Top level modules:
+# 	fp_add
+# Model Technology ModelSim SE vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package dspba_library_package
+# Model Technology ModelSim SE vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package dspba_library_package
+# -- Compiling entity dspba_delay
+# -- Compiling architecture delay of dspba_delay
+# -- Loading package NUMERIC_STD
+# -- Compiling entity dspba_sync_reg
+# -- Compiling architecture sync_reg of dspba_sync_reg
+# Model Technology ModelSim SE vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package dspba_library_package
+# -- Loading package altera_mf_components
+# -- Loading package altera_lnsim_components
+# -- Loading package LPM_COMPONENTS
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package twentynm_atom_pack
+# -- Loading package twentynm_components
+# -- Compiling entity fp_mult_altera_fp_functions_161_qww3g2q
+# -- Compiling architecture normal of fp_mult_altera_fp_functions_161_qww3g2q
+# Model Technology ModelSim SE vlog 10.1b Compiler 2012.04 Apr 26 2012
+# -- Compiling module fp_mult
+# 
+# Top level modules:
+# 	fp_mult
+# Model Technology ModelSim SE vlog 10.1b Compiler 2012.04 Apr 26 2012
+# -- Skipping module test
+# -- Skipping module data_pkt_top
+# -- Skipping module head_analyze
+# -- Skipping module hap_analyze
+# -- Skipping module calculate_p
+# -- Skipping module package_send
+# -- Skipping module read_analyze
+# -- Compiling module matrix_memory
+# -- Skipping module matrix_9
+# -- Compiling module calculate_model
+# -- Skipping module pair_hmm_top
+# 
+# Top level modules:
+# 	test
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L twentynm_ver -L twentynm_hssi_ver -L twentynm_hip_ver -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L twentynm -L twentynm_hssi -L twentynm_hip -pli novas.dll -t ps -novopt work.test 
+# Loading novas.dll
+# ** Error: License checkout has been disallowed because
+# only one session is allowed to run on an uncounted nodelock
+# license and an instance of ModelSim is already running with a
+# nodelocked license on this machine.
+# Error loading design
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       # Break key hit 
+# Break at an unknown location
+# Simulation Breakpoint: Break at an unknown location
+# MACRO ./run.do PAUSED at line 74
+# Break key hit 
+# 
+# <EOF> 

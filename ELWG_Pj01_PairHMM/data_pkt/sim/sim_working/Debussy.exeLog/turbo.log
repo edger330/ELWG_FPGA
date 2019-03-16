@@ -1,0 +1,5 @@
+Command Line: Debussy -f run.f
+snsGetMaxWantedLicObj(): Both NOVAS_LICENSE_FILE and LM_LICENSE_FILE are not set.
+hbReload time 0 0.0 0.0 delta 68344 446464 total 12913080 17477632
+au time 15643 0.0 0.0 delta 21784384 21241856 total 21999616 21999616
+84

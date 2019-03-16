@@ -1,0 +1,239 @@
+*design* DebussyLib (btIdent 3.2v9)
+Command arguments:
+    +define+verilog
+    -f run.f
+        ../testbench/test.sv
+        ../../synth/source/data_pkt_top.v
+        ../../synth/source/head_analyze.v
+        ../../synth/source/hap_analyze.v
+        ../../synth/source/calculate_p.v
+        ../../synth/source/package_send.v
+        ../../synth/source/read_analyze.v
+        ../../synth/source/matrix_memory.v
+        ../../synth/source/matrix_9.v
+        ../../synth/source/calculate_model.v
+        ../../synth/source/pair_hmm_top.v
+
+
+*Error* usage of @(*) is only supported if option -2001 specified
+"../../synth/source/data_pkt_top.v", 178: 
+
+*Error* usage of @(*) is only supported if option -2001 specified
+"../../synth/source/hap_analyze.v", 204: 
+
+*Error* usage of @(*) is only supported if option -2001 specified
+"../../synth/source/read_analyze.v", 291: 
+
+*Error* usage of ANSI-style port declaration is only supported if option -2001 specified
+"../../synth/source/matrix_memory.v", 137: 
+
+*Error* usage of ANSI-style port declaration is only supported if option -2001 specified
+"../../synth/source/matrix_memory.v", 141: 
+
+*Error* port busy not input, output or inout
+"../../synth/source/matrix_memory.v", 58: 
+
+*Error* port signal not input, output or inout
+"../../synth/source/matrix_memory.v", 62: 
+
+*Error* illegal LHS in procedural assignment
+"../../synth/source/matrix_memory.v", 280: 
+
+*Error* illegal LHS in procedural assignment
+"../../synth/source/matrix_memory.v", 282: 
+
+*Error* illegal LHS in procedural assignment
+"../../synth/source/matrix_memory.v", 290: 
+
+*Error* illegal LHS in procedural assignment
+"../../synth/source/matrix_memory.v", 292: 
+
+*Error* illegal LHS in procedural assignment
+"../../synth/source/matrix_memory.v", 294: 
+
+*Error* usage of @(*) is only supported if option -2001 specified
+"../../synth/source/matrix_9.v", 924: 
+
+*Error* usage of @(*) is only supported if option -2001 specified
+"../../synth/source/matrix_9.v", 940: 
+
+*Error* usage of @(*) is only supported if option -2001 specified
+"../../synth/source/matrix_9.v", 956: 
+
+*Error* usage of @(*) is only supported if option -2001 specified
+"../../synth/source/matrix_9.v", 972: 
+
+*Error* usage of @(*) is only supported if option -2001 specified
+"../../synth/source/matrix_9.v", 988: 
+
+*Error* usage of @(*) is only supported if option -2001 specified
+"../../synth/source/matrix_9.v", 1004: 
+
+*Error* usage of @(*) is only supported if option -2001 specified
+"../../synth/source/matrix_9.v", 1020: 
+
+*Error* usage of @(*) is only supported if option -2001 specified
+"../../synth/source/matrix_9.v", 1038: 
+
+*Error* usage of @(*) is only supported if option -2001 specified
+"../../synth/source/matrix_9.v", 1054: 
+
+*Error* usage of @(*) is only supported if option -2001 specified
+"../../synth/source/matrix_9.v", 1070: 
+
+*Error* usage of @(*) is only supported if option -2001 specified
+"../../synth/source/matrix_9.v", 1086: 
+
+*Error* usage of @(*) is only supported if option -2001 specified
+"../../synth/source/matrix_9.v", 1103: 
+
+*Error* usage of @(*) is only supported if option -2001 specified
+"../../synth/source/matrix_9.v", 1119: 
+
+*Error* usage of @(*) is only supported if option -2001 specified
+"../../synth/source/matrix_9.v", 1135: 
+
+*Error* usage of @(*) is only supported if option -2001 specified
+"../../synth/source/matrix_9.v", 1151: 
+
+*Error* usage of @(*) is only supported if option -2001 specified
+"../../synth/source/matrix_9.v", 1167: 
+
+*Error* usage of @(*) is only supported if option -2001 specified
+"../../synth/source/matrix_9.v", 1183: 
+
+*Error* usage of @(*) is only supported if option -2001 specified
+"../../synth/source/matrix_9.v", 1199: 
+
+*Error* usage of ANSI-style port declaration is only supported if option -2001 specified
+"../../synth/source/calculate_model.v", 90: 
+
+*Error* usage of ANSI-style port declaration is only supported if option -2001 specified
+"../../synth/source/calculate_model.v", 91: 
+
+*Error* usage of , is only supported if option -2001 specified
+"../../synth/source/calculate_model.v", 264: 
+
+*Error* port result not input, output or inout
+"../../synth/source/calculate_model.v", 51: 
+
+*Error* port result_vld not input, output or inout
+"../../synth/source/calculate_model.v", 52: 
+
+*Error* illegal LHS in procedural assignment
+"../../synth/source/calculate_model.v", 434: 
+
+*Error* illegal LHS in procedural assignment
+"../../synth/source/calculate_model.v", 436: 
+
+*Error* illegal LHS in procedural assignment
+"../../synth/source/calculate_model.v", 442: 
+
+*Error* illegal LHS in procedural assignment
+"../../synth/source/calculate_model.v", 444: 
+
+*Error* illegal LHS in procedural assignment
+"../../synth/source/calculate_model.v", 446: 
+
+*Error* view ram_2_port_9600x128_8 is not defined for inst u_cpu_pkt_ram
+"../../synth/source/data_pkt_top.v", 158: 
+
+*Error* view ram_2_port_32x8_32 is not defined for inst u_head_ram
+"../../synth/source/head_analyze.v", 156: 
+
+*Error* view ram_2_port_102400x8 is not defined for inst u_hap_ram
+"../../synth/source/hap_analyze.v", 471: 
+
+*Error* view rom_512x32 is not defined for inst rom_p_inst
+"../../synth/source/calculate_p.v", 443: 
+
+*Error* view rom_128x16 is not defined for inst rom_pmmbase_inst
+"../../synth/source/calculate_p.v", 450: 
+
+*Error* view rom_16384x32 is not defined for inst rom_pmm_inst
+"../../synth/source/calculate_p.v", 457: 
+
+*Error* view fp_mul_32 is not defined for inst fp_mul_32_inst
+"../../synth/source/calculate_p.v", 464: 
+
+*Error* view rom_y_initial is not defined for inst r0
+"../../synth/source/package_send.v", 519: 
+
+*Error* view fifo_1024x32 is not defined for inst u0
+"../../synth/source/package_send.v", 531: 
+
+*Error* view ram_2_port_8192x8 is not defined for inst u_read_ram
+"../../synth/source/read_analyze.v", 559: 
+
+*Error* view ram_2_port_8192x32 is not defined for inst p0_ram
+"../../synth/source/read_analyze.v", 786: 
+
+*Error* view ram_2_port_8192x32 is not defined for inst p1_ram
+"../../synth/source/read_analyze.v", 796: 
+
+*Error* view ram_2_port_8192x32 is not defined for inst p2_ram
+"../../synth/source/read_analyze.v", 806: 
+
+*Error* view ram_2_port_8192x32 is not defined for inst p3_ram
+"../../synth/source/read_analyze.v", 816: 
+
+*Error* view ram_2_port_8192x32 is not defined for inst p4_ram
+"../../synth/source/read_analyze.v", 826: 
+
+*Error* view ram_2_port_8192x32 is not defined for inst p5_ram
+"../../synth/source/read_analyze.v", 836: 
+
+*Error* view ram_2_port_8192x32 is not defined for inst p6_ram
+"../../synth/source/read_analyze.v", 846: 
+
+*Error* view ram_2_wrport_1024x32 is not defined for inst u0
+"../../synth/source/matrix_memory.v", 869: 
+
+*Error* view ram_2_port_1024_32 is not defined for inst r1
+"../../synth/source/matrix_memory.v", 893: 
+
+*Error* view fifo_36x36 is not defined for inst u0
+"../../synth/source/matrix_9.v", 1406: 
+
+*Warning* port sizes differ (1 vs 37) in port connection (port result)
+"../../synth/source/matrix_9.v", 446: 
+
+*Error* view fp_mult is not defined for inst m0
+"../../synth/source/calculate_model.v", 143: 
+
+*Error* view fp_mult is not defined for inst m1
+"../../synth/source/calculate_model.v", 152: 
+
+*Error* view fp_mult is not defined for inst m2
+"../../synth/source/calculate_model.v", 161: 
+
+*Error* view fp_mult is not defined for inst m3
+"../../synth/source/calculate_model.v", 172: 
+
+*Error* view fp_mult is not defined for inst m4
+"../../synth/source/calculate_model.v", 181: 
+
+*Error* view fp_mult is not defined for inst m5
+"../../synth/source/calculate_model.v", 190: 
+
+*Error* view fp_mult is not defined for inst m6
+"../../synth/source/calculate_model.v", 199: 
+
+*Error* view fp_add is not defined for inst a0
+"../../synth/source/calculate_model.v", 208: 
+
+*Error* view fp_add is not defined for inst a1
+"../../synth/source/calculate_model.v", 217: 
+
+*Error* view fp_add is not defined for inst a2
+"../../synth/source/calculate_model.v", 226: 
+
+*Error* view fp_add is not defined for inst a3
+"../../synth/source/calculate_model.v", 235: 
+
+*Error* view fp_add is not defined for inst m_x_a4
+"../../synth/source/calculate_model.v", 245: 
+
+*Error* view fp_add is not defined for inst sum_all
+"../../synth/source/calculate_model.v", 254: 
+Total	73 error(s),   1 warning(s)

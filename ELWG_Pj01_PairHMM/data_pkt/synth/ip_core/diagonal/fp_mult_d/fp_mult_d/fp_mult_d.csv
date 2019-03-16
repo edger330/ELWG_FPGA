@@ -1,0 +1,20 @@
+# system info fp_mult_d on 2017.12.12.17:00:11
+system_info:
+name,value
+DEVICE,10AX115S2F45I1SG
+DEVICE_FAMILY,Arria 10
+GENERATION_ID,1513069207
+#
+#
+# Files generated for fp_mult_d on 2017.12.12.17:00:11
+files:
+filepath,kind,attributes,module,is_top
+sim/fp_mult_d.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,fp_mult_d,true
+altera_fp_functions_161/sim/dspba_library_package.vhd,VHDL,,fp_mult_d_altera_fp_functions_161_qww3g2q,false
+altera_fp_functions_161/sim/dspba_library.vhd,VHDL,,fp_mult_d_altera_fp_functions_161_qww3g2q,false
+altera_fp_functions_161/sim/fp_mult_d_altera_fp_functions_161_qww3g2q.vhd,VHDL,,fp_mult_d_altera_fp_functions_161_qww3g2q,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+fp_mult_d.fp_functions_0,fp_mult_d_altera_fp_functions_161_qww3g2q
