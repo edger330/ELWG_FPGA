@@ -1,7 +1,0 @@
-../testbench/test.sv
-
-
-../../synth/source/data_pkt_top.v
-../../synth/source/head_analyze.v
-../../synth/source/hap_analyze.v
-

@@ -1,5 +1,0 @@
-config ram_2048x512_8192x128_cfg;
-		design ram_2048x512_8192x128;
-		instance ram_2048x512_8192x128.ram_2port_0 use ram_2048x512_8192x128_ram_2port_161.ram_2048x512_8192x128_ram_2port_161_himwlxy;
-endconfig
-
